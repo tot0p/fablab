@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Basics</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+    <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-expanded="false">
+            <span class="nav-icon">📁</span>
+            Policies
+            <span class="dropdown-arrow">▶</span>
+        </button>
+        <div class="nav-dropdown-content">
+            
+                
+                
+    <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-expanded="false">
+            <span class="nav-icon">📁</span>
+            Test
+            <span class="dropdown-arrow">▶</span>
+        </button>
+        <div class="nav-dropdown-content">
+            
+                
+                
+    <a href="/docs/policies/test/reservations/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        Reservations
+    </a>
+
+            
+        </div>
+    </div>
+
+            
+                
+                
+    <a href="/docs/policies/reservations/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        Reservations
+    </a>
+
+            
+        </div>
+    </div>
+
+                        
+                            
+    <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-expanded="false">
+            <span class="nav-icon">📁</span>
+            Tools
+            <span class="dropdown-arrow">▶</span>
+        </button>
+        <div class="nav-dropdown-content">
+            
+                
+                
+    <a href="/docs/tools/3d-printers/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        3d Printers
+    </a>
+
+            
+                
+                
+    <a href="/docs/tools/electronics/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        Electronics
+    </a>
+
+            
+                
+                
+    <a href="/docs/tools/laser-cutters/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        Laser Cutters
+    </a>
+
+            
+        </div>
+    </div>
+
+                        
+                            
+    <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-expanded="false">
+            <span class="nav-icon">📁</span>
+            Tutorials
+            <span class="dropdown-arrow">▶</span>
+        </button>
+        <div class="nav-dropdown-content">
+            
+                
+                
+    <a href="/docs/tutorials/arduino-basics/" class="nav-item active">
+        <span class="nav-icon">📄</span>
+        Arduino Basics
+    </a>
+
+            
+                
+                
+    <a href="/docs/tutorials/sensors/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        Sensors
+    </a>
+
+            
+        </div>
+    </div>
+
+                        
+                            
+    <a href="/docs/getting-started/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        Getting Started
+    </a>
+
+                        
+                            
+    <a href="/docs/safety/" class="nav-item ">
+        <span class="nav-icon">📄</span>
+        Safety
+    </a>
+
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Arduino Basics</h1>
+        
+            <p class="doc-description">Getting started with Arduino microcontroller programming</p>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="arduino-basics" tabindex="-1"><a class="header-anchor" href="#arduino-basics">Arduino Basics</a></h1>
+<p>Arduino is a great platform for learning electronics and programming. This tutorial will get you started with your first Arduino project.</p>
+<h2 id="what-you'll-need" tabindex="-1"><a class="header-anchor" href="#what-you'll-need">What You'll Need</a></h2>
+<ul>
+<li>Arduino Uno or compatible board</li>
+<li>USB cable (Type A to Type B)</li>
+<li>LED</li>
+<li>220Ω resistor</li>
+<li>Breadboard</li>
+<li>Jumper wires</li>
+</ul>
+<h2 id="setting-up-arduino-ide" tabindex="-1"><a class="header-anchor" href="#setting-up-arduino-ide">Setting Up Arduino IDE</a></h2>
+<ol>
+<li>Download Arduino IDE from <a href="https://www.arduino.cc/en/software">arduino.cc</a></li>
+<li>Install the software on your computer</li>
+<li>Connect your Arduino via USB</li>
+<li>Select your board type: <strong>Tools &gt; Board &gt; Arduino Uno</strong></li>
+<li>Select the correct port: <strong>Tools &gt; Port</strong></li>
+</ol>
+<h2 id="your-first-sketch%3A-blink-led" tabindex="-1"><a class="header-anchor" href="#your-first-sketch%3A-blink-led">Your First Sketch: Blink LED</a></h2>
+<pre class="language-cpp"><code class="language-cpp"><span class="token comment">// Pin 13 has an LED connected on most Arduino boards</span>
+<span class="token keyword">int</span> led <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span>
+
+<span class="token comment">// The setup function runs once when you press reset</span>
+<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Initialize digital pin LED_BUILTIN as an output</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>led<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// The loop function runs over and over again forever</span>
+<span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>led<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// Turn the LED on</span>
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>               <span class="token comment">// Wait for a second</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>led<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// Turn the LED off</span>
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>               <span class="token comment">// Wait for a second</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="understanding-the-code" tabindex="-1"><a class="header-anchor" href="#understanding-the-code">Understanding the Code</a></h2>
+<h3 id="structure" tabindex="-1"><a class="header-anchor" href="#structure">Structure</a></h3>
+<ul>
+<li><code>setup()</code>: Runs once when Arduino starts</li>
+<li><code>loop()</code>: Runs continuously after setup()</li>
+</ul>
+<h3 id="functions-used" tabindex="-1"><a class="header-anchor" href="#functions-used">Functions Used</a></h3>
+<ul>
+<li><code>pinMode(pin, mode)</code>: Sets pin as INPUT or OUTPUT</li>
+<li><code>digitalWrite(pin, value)</code>: Sets pin HIGH (5V) or LOW (0V)</li>
+<li><code>delay(milliseconds)</code>: Pauses execution</li>
+</ul>
+<h2 id="building-the-circuit" tabindex="-1"><a class="header-anchor" href="#building-the-circuit">Building the Circuit</a></h2>
+<ol>
+<li>Connect long leg of LED to pin 13</li>
+<li>Connect short leg of LED to one end of resistor</li>
+<li>Connect other end of resistor to GND (ground)</li>
+</ol>
+<h2 id="next-steps" tabindex="-1"><a class="header-anchor" href="#next-steps">Next Steps</a></h2>
+<p>Try these modifications:</p>
+<ul>
+<li>Change the delay values to make it blink faster/slower</li>
+<li>Use different pins</li>
+<li>Add more LEDs</li>
+<li>Try different patterns</li>
+</ul>
+<h2 id="common-issues" tabindex="-1"><a class="header-anchor" href="#common-issues">Common Issues</a></h2>
+<h3 id="upload-problems" tabindex="-1"><a class="header-anchor" href="#upload-problems">Upload Problems</a></h3>
+<ul>
+<li>Check USB connection</li>
+<li>Verify correct board and port selection</li>
+<li>Try pressing reset button before upload</li>
+</ul>
+<h3 id="led-not-working" tabindex="-1"><a class="header-anchor" href="#led-not-working">LED Not Working</a></h3>
+<ul>
+<li>Check polarity (long leg = positive)</li>
+<li>Verify resistor connection</li>
+<li>Test LED with multimeter</li>
+</ul>
+<p>Ready for more? Check out our <a href="/docs/tutorials/sensors/">sensor tutorials</a> next!</p>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2025-10-29T15:17:22.989Z">October 29, 2025</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
