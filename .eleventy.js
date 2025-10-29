@@ -34,10 +34,15 @@ module.exports = function(eleventyConfig) {
   // Transform docs URLs
   eleventyConfig.addGlobalData("eleventyComputed", {
     permalink: (data) => {
-      if (data.page.inputPath.includes('assets/docs/')) {
-        const path = data.page.inputPath
+      if (data.page.inputPath.includes('assets/docs/') || data.page.inputPath.includes('assets\\docs\\')) {
+        let path = data.page.inputPath
           .replace(/^\.\/assets\/docs\//, '')
+          .replace(/^\.\\assets\\docs\\/, '')
+          .replace(/^assets\/docs\//, '')
+          .replace(/^assets\\docs\\/, '')
           .replace(/\.md$/, '/');
+        // Normalize path separators
+        path = path.replace(/\\/g, '/');
         return `/docs/${path}`;
       }
       return data.permalink;

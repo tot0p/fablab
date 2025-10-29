@@ -2,7 +2,47 @@
 document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
     const sidebar = document.querySelector('.sidebar');
-    const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+    
+    // Function to initialize dropdown functionality
+    function initializeDropdowns() {
+        const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+        
+        dropdownToggles.forEach(toggle => {
+            // Remove existing listeners to avoid duplicates
+            toggle.removeEventListener('click', handleDropdownClick);
+            toggle.addEventListener('click', handleDropdownClick);
+        });
+    }
+    
+    // Dropdown click handler
+    function handleDropdownClick(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const dropdown = this.closest('.nav-dropdown');
+        const isOpen = dropdown.classList.contains('open');
+        
+        // Find parent dropdown container (if any)
+        const parentDropdownContent = dropdown.parentElement.closest('.nav-dropdown-content');
+        
+        // Close all sibling dropdowns (at the same level)
+        const siblingContainer = parentDropdownContent || dropdown.parentElement;
+        siblingContainer.querySelectorAll(':scope > .nav-dropdown').forEach(d => {
+            if (d !== dropdown) {
+                d.classList.remove('open');
+                // Also close all nested dropdowns within siblings
+                d.querySelectorAll('.nav-dropdown').forEach(nested => {
+                    nested.classList.remove('open');
+                });
+            }
+        });
+        
+        // Toggle current dropdown
+        dropdown.classList.toggle('open', !isOpen);
+    }
+    
+    // Initialize dropdowns
+    initializeDropdowns();
     
     // Mobile menu toggle
     if (mobileToggle && sidebar) {
@@ -18,31 +58,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Dropdown menu functionality
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-            const dropdown = this.closest('.nav-dropdown');
-            const isOpen = dropdown.classList.contains('open');
-            
-            // Close all other dropdowns
-            document.querySelectorAll('.nav-dropdown').forEach(d => {
-                if (d !== dropdown) {
-                    d.classList.remove('open');
-                }
-            });
-            
-            // Toggle current dropdown
-            dropdown.classList.toggle('open', !isOpen);
-        });
-    });
-    
     // Auto-expand dropdown if current page is inside it
     const currentUrl = window.location.pathname;
     const activeNavItem = document.querySelector(`.nav-item[href="${currentUrl}"]`);
     if (activeNavItem) {
-        const parentDropdown = activeNavItem.closest('.nav-dropdown');
-        if (parentDropdown) {
-            parentDropdown.classList.add('open');
+        // Find all parent dropdowns and open them
+        let currentElement = activeNavItem;
+        while (currentElement) {
+            const parentDropdown = currentElement.closest('.nav-dropdown');
+            if (parentDropdown) {
+                parentDropdown.classList.add('open');
+                currentElement = parentDropdown.parentElement;
+            } else {
+                break;
+            }
         }
     }
     

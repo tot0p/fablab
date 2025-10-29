@@ -189,13 +189,51 @@ body {
     padding-left: 1rem;
 }
 
-.nav-dropdown.open .nav-dropdown-content {
-    max-height: 500px;
+.nav-dropdown.open > .nav-dropdown-content {
+    max-height: 1000px; /* Increased for nested content */
 }
 
 .nav-dropdown-content .nav-item {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
+}
+
+/* Nested dropdown styles */
+.nav-dropdown-content .nav-dropdown {
+    margin-left: 0.5rem;
+}
+
+.nav-dropdown-content .nav-dropdown-toggle {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-dropdown-content .nav-dropdown-content {
+    padding-left: 1.5rem;
+}
+
+/* Third level and beyond */
+.nav-dropdown-content .nav-dropdown-content .nav-dropdown {
+    margin-left: 0.5rem;
+}
+
+.nav-dropdown-content .nav-dropdown-content .nav-dropdown-toggle {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.nav-dropdown-content .nav-dropdown-content .nav-item {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+}
+
+/* Visual hierarchy for nested levels */
+.nav-dropdown-content .nav-dropdown .nav-icon {
+    opacity: 0.8;
+}
+
+.nav-dropdown-content .nav-dropdown-content .nav-icon {
+    opacity: 0.6;
 }
 
 /* Main Content */

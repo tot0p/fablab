@@ -38,7 +38,64 @@
                     <div class="nav-section">
                         <h3 class="nav-section-title">Documentation</h3>
                         {% for item in navigation %}
-                            {% include "nav-item.njk" %}
+                            {% if item.type == 'file' %}
+                                <a href="{{ item.url }}" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    {{ item.title }}
+                                </a>
+                            {% elif item.type == 'directory' %}
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        {{ item.title }}
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        {% for child in item.children %}
+                                            {% if child.type == 'file' %}
+                                                <a href="{{ child.url }}" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    {{ child.title }}
+                                                </a>
+                                            {% elif child.type == 'directory' %}
+                                                <div class="nav-dropdown">
+                                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                                        <span class="nav-icon">📁</span>
+                                                        {{ child.title }}
+                                                        <span class="dropdown-arrow">▶</span>
+                                                    </button>
+                                                    <div class="nav-dropdown-content">
+                                                        {% for grandchild in child.children %}
+                                                            {% if grandchild.type == 'file' %}
+                                                                <a href="{{ grandchild.url }}" class="nav-item">
+                                                                    <span class="nav-icon">📄</span>
+                                                                    {{ grandchild.title }}
+                                                                </a>
+                                                            {% elif grandchild.type == 'directory' %}
+                                                                <div class="nav-dropdown">
+                                                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                                                        <span class="nav-icon">📁</span>
+                                                                        {{ grandchild.title }}
+                                                                        <span class="dropdown-arrow">▶</span>
+                                                                    </button>
+                                                                    <div class="nav-dropdown-content">
+                                                                        {% for greatgrandchild in grandchild.children %}
+                                                                            <a href="{{ greatgrandchild.url }}" class="nav-item">
+                                                                                <span class="nav-icon">📄</span>
+                                                                                {{ greatgrandchild.title }}
+                                                                            </a>
+                                                                        {% endfor %}
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endif %}
                         {% endfor %}
                     </div>
                 {% endif %}
