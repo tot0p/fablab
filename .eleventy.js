@@ -41,8 +41,7 @@ module.exports = function(eleventyConfig) {
           .replace(/\.md$/, '/');
         // Normalize path separators
         path = path.replace(/\\/g, '/');
-        const pathPrefix = process.env.ELEVENTY_ENV === 'production' ? '/fablab' : '';
-        return `${pathPrefix}/docs/${path}`;
+        return `/docs/${path}`;
       }
       return data.permalink;
     }
