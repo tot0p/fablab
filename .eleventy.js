@@ -21,7 +21,7 @@ module.exports = function(eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy({"src/css": "css"});
   eleventyConfig.addPassthroughCopy({"src/js": "js"});
-  eleventyConfig.addPassthroughCopy("assets/images");
+  eleventyConfig.addPassthroughCopy({"assets/img": "img"});
 
   // Watch for changes in docs folder
   eleventyConfig.addWatchTarget("./assets/docs/");
@@ -82,6 +82,16 @@ module.exports = function(eleventyConfig) {
     return str.split(' ').map(word => 
       word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
     ).join(' ');
+  });
+
+  // Image URL filter for automatic path prefix handling
+  eleventyConfig.addFilter("imgUrl", function(imgPath) {
+    const pathPrefix = process.env.ELEVENTY_ENV === 'production' ? '/fablab' : '';
+    // Si le chemin commence par /, l'utiliser tel quel, sinon ajouter /img/
+    if (imgPath.startsWith('/')) {
+      return `${pathPrefix}${imgPath}`;
+    }
+    return `${pathPrefix}/img/${imgPath}`;
   });
 
   // Path prefix for production

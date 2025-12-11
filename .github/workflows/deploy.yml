@@ -35,6 +35,10 @@ jobs:
             # Copy built site to root
             cp -r _site/* .
             rm -rf _site
+
+            # CNAME file
+            echo "fablab.thomaslemaitre.fr" > CNAME
+
             # Add and commit changes
             git add .
             git commit -m "Deploy site" || exit 0
