@@ -44,6 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize dropdowns
     initializeDropdowns();
     
+    // Prevent dropdown closing when clicking on nav-items inside dropdowns
+    document.querySelectorAll('.nav-dropdown-content .nav-item').forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    });
+    
     // Mobile menu toggle
     if (mobileToggle && sidebar) {
         mobileToggle.addEventListener('click', function() {
