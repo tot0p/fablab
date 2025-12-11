@@ -60,7 +60,8 @@ function generateUrl(filePath) {
   // Convert file path to URL path
   let url = filePath.replace(/\\/g, '/'); // Convert Windows paths
   url = url.replace(/\.md$/, '/'); // Remove .md extension and add trailing slash
-  return `/docs/${url}`;
+  const pathPrefix = process.env.ELEVENTY_ENV === 'production' ? '/fablab' : '';
+  return `${pathPrefix}/docs/${url}`;
 }
 
 module.exports = function() {
