@@ -1,6 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItContainer = require("markdown-it-container");
 
 module.exports = function(eleventyConfig) {
   // Add syntax highlighting plugin
@@ -16,6 +17,34 @@ module.exports = function(eleventyConfig) {
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   });
+
+  // GitHub-style alerts
+  const alertTypes = [
+    { name: 'note', icon: '💡' },
+    { name: 'tip', icon: '💡' },
+    { name: 'important', icon: '❗' },
+    { name: 'warning', icon: '⚠️' },
+    { name: 'caution', icon: '🚫' }
+  ];
+
+  alertTypes.forEach(({ name, icon }) => {
+    markdownLibrary.use(markdownItContainer, name.toUpperCase(), {
+      validate: function(params) {
+        return params.trim().match(new RegExp(`^${name.toUpperCase()}\\s*(.*)$`, 'i'));
+      },
+      render: function(tokens, idx) {
+        const m = tokens[idx].info.trim().match(new RegExp(`^${name.toUpperCase()}\\s*(.*)$`, 'i'));
+        if (tokens[idx].nesting === 1) {
+          const title = m && m[1] ? m[1] : name.charAt(0).toUpperCase() + name.slice(1);
+          return `<div class="markdown-alert markdown-alert-${name.toLowerCase()}">
+                    <p class="markdown-alert-title">${icon} ${title}</p>\n`;
+        } else {
+          return '</div>\n';
+        }
+      }
+    });
+  });
+
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Copy static assets
