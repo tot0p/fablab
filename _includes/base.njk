@@ -21,14 +21,14 @@
         <!-- Sidebar Navigation -->
         <nav class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <a href="/" class="logo">
+                <a href="{{ '/' | url }}" class="logo">
                     <h2>🔬 Fablab Docs</h2>
                 </a>
             </div>
             
             <div class="nav-content">
                 <!-- Home Link -->
-                <a href="/" class="nav-item {{ 'active' if page.url == '/' }}">
+                <a href="{{ '/' | url }}" class="nav-item {{ 'active' if page.url == '/' }}">
                     <span class="nav-icon">🏠</span>
                     Home
                 </a>
