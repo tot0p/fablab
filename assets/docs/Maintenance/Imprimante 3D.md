@@ -4,12 +4,12 @@
 ## Sommaire
 
 1. [Entretien régulier et maintenance préventive](#entretien-régulier-et-maintenance-préventive-des-imprimantes-3d-bambu-lab-p1s)
-   - [Après chaque impression](#après-chaque-impression-ou-en-fin-de-session-dutilisation)
-   - [Toutes les 50 à 100 heures](#2-toutes-les-50-à-100-heures-dimpression-ou-chaque-semaine-dusage-régulier)
-   - [Toutes les 250 heures](#3-toutes-les-250-heures-dimpression-ou-tous-les-1-à-2-mois)
-   - [Toutes les 500 à 1000 heures](#4-toutes-les-500-à-1000-heures-dimpression-ou-tous-les-3-à-6-mois)
-   - [Toutes les 1000 à 2000 heures](#5-toutes-les-1000-à-2000-heures-dimpression-ou-tous-les-12-mois)
-   - [Entretien annuel](#6-entretien-annuel-ou-stockage-prolongé)
+   - [Après chaque impression](#après-chaque-impression-(ou-en-fin-de-session-dutilisation))
+   - [Toutes les 50 à 100 heures](#2-toutes-les-50-à-100-heures-dimpression-(ou-chaque-semaine-dusage-régulier))
+   - [Toutes les 250 heures](#3-toutes-les-250-heures-dimpression-(ou-tous-les-1-à-2-mois))
+   - [Toutes les 500 à 1000 heures](#4-toutes-les-500-à-1000-heures-dimpression-(ou-tous-les-3-à-6-mois))
+   - [Toutes les 1000 à 2000 heures](#5-toutes-les-1000-à-2000-heures-dimpression-(ou-tous-les-12-mois))
+   - [Entretien annuel](#6-entretien-annuel-(ou-stockage-prolongé))
 2. [Diagnostics des pannes](#diagnostics-des-pannes)
    - [Défaut d'extrusion](#1-défaut-dextrusion)
    - [Défaut d'adhérence](#2-défaut-dadhérence)
