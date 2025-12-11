@@ -3,6 +3,7 @@ layout: base.njk
 title: "Fablab Documentation Portal"
 ---
 
+
 <div class="hero">
   <h1>{{ title }}</h1>
   <p>Welcome to the Fablab documentation portal. Use the navigation menu to explore our guides, tutorials, and resources.</p>
