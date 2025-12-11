@@ -299,6 +299,41 @@ body {
 
 .card p {
     color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.card a::before {
+    content: "→";
+    font-weight: bold;
+}
+
+.card em {
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* Documentation Styles */
