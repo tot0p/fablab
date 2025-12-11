@@ -105,10 +105,14 @@ Depuis Bambu Studio choisis "Imprimer Plateau" et selectionne l'imprimante sur l
 Avant de lancer l'impression, assure-toi que :  
    - Le bon plateau est sélectionné
    - Le bon filament est chargé dans l’imprimante et utilisé pour l’impression
-   - [CAPTURE : Fenêtre de lancement d’impression]
+   ![lancement de l'impression](/img/send-print.png)
 Clique sur **Envoyer / Print** pour démarrer l’impression.
 
 L'imprimante effectuera les étapes de préchauffage et de calibration avant de commencer l'impression.
+
+---
+
+![timelapse](/img/timelapse.gif)
 
 ---
 
@@ -116,7 +120,8 @@ L'imprimante effectuera les étapes de préchauffage et de calibration avant de 
 
 1. Attends que le plateau refroidisse complètement.  
 2. Retire délicatement le Benchy.  
-   - [CAPTURE : Benchy terminé sur le plateau]
+   ![récupération du Benchy imprimé](/img/benchy-plateau.jpg)
+3. Si nécessaire, enlève les éventuels résidus de filament avec la spatule verte
 
 ---
 
@@ -127,12 +132,12 @@ Observe :
 - Les ponts (bridging)  
 - La surface  
 - L’alignement de la cheminée  
-- La lisibilité du texte sous la coque  
-
-- [CAPTURE : Gros plan du Benchy une fois imprimé]
+- La lisibilité du texte sous et derrière la coque
 
 Tu peux observer les détails et vérifier la qualité de l’impression.
 Le Benchy est un modèle sympathique et utile pour évaluer les performances de l'imprimante 3D, elle permet de tester plusieurs aspects techniques de l'imprimante.
+
+![Gros plan du Benchy imprimé](/img/benchy-gros-plan.jpg)
 
 ---
 
@@ -148,4 +153,6 @@ Tu viens de voir l’ensemble du parcours :
 C’est le chemin classique pour n’importe quel futur projet d’impression 3D.
 
 Certains ajustements seront nécessaires selon les modèles et matériaux, mais tu as maintenant une bonne base pour commencer ! Bonne impression !
+
+![Final Benchy](/img/benchy-finit.jpg)
 
