@@ -1,8 +1,23 @@
 # Zero to Benchy avec Bambu Studio
 
-Ce guide t’explique toutes les étapes pour partir de zéro jusqu'a ton premier Benchy imprimé en 3D !
+Ce guide t'explique toutes les étapes pour partir de zéro jusqu'a ton premier Benchy imprimé en 3D !
 
-Dans ce tuto tu verras comment télécharger le logiciel, importer le modèle, choisir les paramètres, envoyer à l’imprimante et enfin récupérer ton bateau fraîchement sorti de l'imprimante.
+Dans ce tuto tu verras comment télécharger le logiciel, importer le modèle, choisir les paramètres, envoyer à l'imprimante et enfin récupérer ton bateau fraîchement sorti de l'imprimante.
+
+## Sommaire
+
+1. [Télécharger et Installer Bambu Studio](#1-télécharger-et-installer-bambu-studio)
+2. [Télécharger le Modèle Benchy](#2-télécharger-le-modèle-benchy)
+3. [Importer le Benchy dans Bambu Studio](#3-importer-le-benchy-dans-bambu-studio)
+4. [Choisir le profil d'imprimante et le matériau](#4-choisir-le-profil-dimprimante-et-le-matériau)
+5. [Choisir un Profil d'Impression](#5-choisir-un-profil-dimpression)
+6. [Les paramètres ajustables](#6-les-paramètres-ajustables)
+7. [Trancher le Modèle (Slicer)](#7-trancher-le-modèle-slicer)
+8. [Avant d'Envoyer à l'Imprimante](#8-avant-denvoyer-à-limprimante)
+9. [Lancer l'Impression](#9-lancer-limpression)
+10. [Récupérer le Benchy Imprimé](#10-récupérer-le-benchy-imprimé)
+11. [Examiner le Résultat](#10-examiner-le-résultat)
+12. [Résumé](#résumé)
 
 ---
 
@@ -10,7 +25,7 @@ Dans ce tuto tu verras comment télécharger le logiciel, importer le modèle, c
 
 1. Va sur la page officielle : https://bambulab.com/en/download/studio
 2. Télécharge la version correspondant à ton système (Windows, macOS ou Linux).  
-   ![page de téléchargement de Bambu Studio](assets/bambu-studio-download.png)
+   ![page de téléchargement de Bambu Studio](/img/bambu-studio-download.png)
 3. Installe puis lance Bambu Studio.
 
 ---
@@ -20,7 +35,7 @@ Dans ce tuto tu verras comment télécharger le logiciel, importer le modèle, c
 1. Récupère le fichier STL du Benchy ici :  
    https://cults3d.com/en/3d-model/tool/3dbenchy-the-jolly-3d-printing-torture-test
 2. Enregistre le fichier sur ton ordinateur.  
-![téléchargement du fichier STL du Benchy](assets/download-benchy-stl.png)
+![téléchargement du fichier STL du Benchy](/img/download-benchy-stl.png)
 
 ---
 
@@ -28,15 +43,15 @@ Dans ce tuto tu verras comment télécharger le logiciel, importer le modèle, c
 
 1. Dans Bambu Studio, fais **Fichier → Importer** ou glisser-déposer le STL dans la zone de travail.  
 2. Le Benchy apparaît sur le plateau virtuel.
-![importation du fichier STL dans Bambu Studio](assets/import-benchy-stl.png)
+![importation du fichier STL dans Bambu Studio](/img/import-benchy-stl.png)
 ---
 
 ## 4. Choisir le profil d’imprimante et le matériau
 
 1. Vérifie que le bon modèle d’imprimante est sélectionné dans le coin supérieur droit.  
-   ![menu imprimante](assets/menu-imprimante.png)
+   ![menu imprimante](/img/menu-imprimante.png)
 2. Choisis le filament PLA Basic.  
-   ![panneau de sélection du filament](assets/selection-filament.png)
+   ![panneau de sélection du filament](/img/selection-filament.png)
 
 ---
 
@@ -46,7 +61,7 @@ Dans ce tuto tu verras comment télécharger le logiciel, importer le modèle, c
    - **0.20 mm Standard**  
    - **0.16 mm Qualité**  
    - **0.28 mm Rapide**  
-![sélection du profil d'impression](assets/selection-profil-impression.png)
+![sélection du profil d'impression](/img/selection-profil-impression.png)
 
 Nous imprimerons le Benchy avec le profil **0.2 mm Standard** pour un bon équilibre entre qualité et vitesse.
 
@@ -67,7 +82,7 @@ Pour débuter et utiliser l'imprimante de manière optimale dans le futur, il es
 
 1. Clique sur **Trancher le plateau / Slice Plate**.  
 2. Bambu Studio génère un aperçu du trajet d’impression.  
-   ![aperçu du tranchage avec les couches visibles](assets/preview-slicing-layers.png)
+   ![aperçu du tranchage avec les couches visibles](/img/preview-slicing-layers.png)
 3. Vérifie :  
    - Que le temps estimé est raisonnable (environ 37 à 40 minutes pour le Benchy avec ce profil)  
    - Que la quantité de filament utilisée est correcte (environ 11-15g pour le Benchy)

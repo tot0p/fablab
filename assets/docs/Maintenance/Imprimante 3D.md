@@ -1,6 +1,30 @@
 
 # Entretien régulier et maintenance préventive des imprimantes 3D Bambu Lab P1S
 
+## Sommaire
+
+1. [Entretien régulier et maintenance préventive](#entretien-régulier-et-maintenance-préventive-des-imprimantes-3d-bambu-lab-p1s)
+   - [Après chaque impression](#après-chaque-impression-ou-en-fin-de-session-dutilisation)
+   - [Toutes les 50 à 100 heures](#2-toutes-les-50-à-100-heures-dimpression-ou-chaque-semaine-dusage-régulier)
+   - [Toutes les 250 heures](#3-toutes-les-250-heures-dimpression-ou-tous-les-1-à-2-mois)
+   - [Toutes les 500 à 1000 heures](#4-toutes-les-500-à-1000-heures-dimpression-ou-tous-les-3-à-6-mois)
+   - [Toutes les 1000 à 2000 heures](#5-toutes-les-1000-à-2000-heures-dimpression-ou-tous-les-12-mois)
+   - [Entretien annuel](#6-entretien-annuel-ou-stockage-prolongé)
+2. [Diagnostics des pannes](#diagnostics-des-pannes)
+   - [Défaut d'extrusion](#1-défaut-dextrusion)
+   - [Défaut d'adhérence](#2-défaut-dadhérence)
+   - [Diagnostique des vibrations](#3-diagnostique-des-vibrations)
+   - [Diagnostic des erreurs d'impression](#4-diagnostic-des-erreurs-dimpression)
+   - [Défaut d'alimentation](#5-défaut-dalimentation-ou-problème-majeur)
+3. [Base de connaissances](#base-de-connaissances)
+   - [Nettoyage du plateau d'impression](#nettoyage-du-plateau-dimpression)
+   - [Nettoyage de la chambre d'impression](#nettoyage-de-la-chambre-dimpression)
+   - [Nettoyage de la tête d'impression et de la buse](#nettoyage-de-la-tête-dimpression-et-de-la-buse)
+   - [Nettoyage des axes et lubrification](#nettoyage-des-axes-et-lubrification)
+   - [Lubrification des galets tendeur de courroie](#lubrification-des-galets-tendeur-de-courroie)
+
+---
+
 > [!CAUTION]
 > Avant d'effectuer toute opération d'entretient ou de maintenance, assurez-vous que l'imprimante est hors tension, débranchée et refroidie pour éviter tout risque de choc électrique ou de brûlure.
 
@@ -135,8 +159,8 @@ Voici les plateaux disponibles dans le fablab :
 
 | **Nom du plateau** 	| **Image**                                                 	| **Méthode de nettoyage superficielle**                                                                     	| **Méthode de nettoyage approfondie**                                               	|
 |--------------------	|-----------------------------------------------------------	|------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------	|
-| Smooth PEI Plate   	| ![Plateau PEI Smooth](./assets/Plateau-PEI-Smooth.jpg)    	| Retirer les résidus de filament ou poussières avec un chiffon non pelucheux imbibé d'alcool isopropylique. 	| Comme le plateau est plat, aucun nettoyage approfondi du plateau n'est nécessaire 	|
-| Textured PEI Plate 	| ![Plateau PEI Texturé](./assets/Plateau-PEI-Textured.jpg) 	| Retirer les résidus de filament ou poussières avec un chiffon non pelucheux imbibé d'alcool isopropylique. 	| Nettoyer avec un peu de savon et une brosse à poils doux.                        	|
+| Smooth PEI Plate   	| ![Plateau PEI Smooth](/img/Plateau-PEI-Smooth.jpg)    	| Retirer les résidus de filament ou poussières avec un chiffon non pelucheux imbibé d'alcool isopropylique. 	| Comme le plateau est plat, aucun nettoyage approfondi du plateau n'est nécessaire 	|
+| Textured PEI Plate 	| ![Plateau PEI Texturé](/img/Plateau-PEI-Textured.jpg) 	| Retirer les résidus de filament ou poussières avec un chiffon non pelucheux imbibé d'alcool isopropylique. 	| Nettoyer avec un peu de savon et une brosse à poils doux.                        	|
 ---
 Si des rayures profondes ou des dommages sont présents sur le plateau, il ne faut plus l'utiliser et le remplacer par un nouveau plateau.
 
@@ -146,7 +170,7 @@ Après nettoyage, éviter de toucher la surface d'impression avec les doigts pou
 
 La chambre d'impression doit être maintenue propre pour éviter que des débris n'interfèrent avec le mouvement des axes ou n'affectent la qualité d'impression.
 
-![Chambre d'impression propre](./assets/bac-imprimante.jpg)
+![Chambre d'impression propre](/img/bac-imprimante.jpg)
 
 Pour nettoyer la chambre d'impression, suivez ces étapes :
 
@@ -156,7 +180,7 @@ Pour nettoyer la chambre d'impression, suivez ces étapes :
 ## Nettoyage de la tête d'impression et de la buse
 La tête d'impression et la buse sont des composants critiques pour une impression de qualité. Il est important de les nettoyer régulièrement pour éviter les problèmes d'extrusion ou autres défauts d'impression.
 
-![Tête d'impression Sale](./assets/nozzle-sale.jpg)
+![Tête d'impression Sale](/img/nozzle-sale.jpg)
 (Buse sale avec accumulation de filament fondu)
 
 Pour nettoyer les ecces de filament fondu sur la buse :
@@ -166,14 +190,14 @@ Pour nettoyer les ecces de filament fondu sur la buse :
 se refroidir, puis utilisez un cure-dent pour gratter délicatement les dépôts restants.
 
 Une buse propre devrais ressembler à ceci :
-![Buse propre](./assets/nozzle.jpg)
+![Buse propre](/img/nozzle.jpg)
 
 Pour nettoyer une buse bouchée :
 1. **Chauffer la buse** : Allumez l'imprimante et chauffez la buse à la température recommandée pour le filament utilisé (200-220°C pour le PLA).
 2. **Utiliser une aiguille de nettoyage** : Insérez une aiguille de nettoyage appropriée dans la buse pour déboucher l'obstruction.
 
 (aiguille de nettoyage de buse)
-![Aiguille de nettoyage de buse](./assets/aiguille-nettoyage.jpg)
+![Aiguille de nettoyage de buse](/img/aiguille-nettoyage.jpg)
 
 3. **Purge du filament** : Après avoir débouché la buse, extrudez un peu de filament via l'interface de l'imprimante pour s'assurer que le flux est rétabli.
 
@@ -185,11 +209,11 @@ Pour assurer un mouvement fluide des axes de l'imprimante, il est important de n
 
 la P1S comporte plusieurs axes et tiges linéaires nécessitant un entretien régulier :
 - Axe X : mouvement gauche-droite de la tête d'impression fait en carbone et par conséquent auto-lubrifiant.
-![Axe X en carbone](./assets/carbon_rod.jpg)
+![Axe X en carbone](/img/carbon_rod.jpg)
 - Axe Y-Z Tige linéaire : supporte le mouvement avant-arrière de la tête d'impression et haut-bas du plateau.
-![Axe Y-Z tige linéaire](./assets/linear_rods.jpg)
+![Axe Y-Z tige linéaire](/img/linear_rods.jpg)
 - Vis Z : responsable du mouvement haut-bas du plateau.
-![Vis Z](./assets/thread_rod.jpg)
+![Vis Z](/img/thread_rod.jpg)
 
 ### Nettoyage de l'axe X en carbone
 Pour nettoyer l'axe X en carbone :
@@ -216,12 +240,12 @@ Pour nettoyer et lubrifier les vis Z :
 5. Essuyez l'excès de graisse au pied de l'axe et au droit du roulement avec un chiffon propre pour éviter l'accumulation de poussière.
 
 (graisse de lubrification Bambu Lab)
-![Graisse de lubrification Bambu Lab](./assets/lubricant.jpg)
+![Graisse de lubrification Bambu Lab](/img/lubricant.jpg)
 
 ## Lubrification des galets tendeur de courroie
 Les galets tendeur de courroie permettent de maintenir la tension correcte des courroies, l'imprimante en comporte 2 au deux extémités arrière de l'axe X.
 
-![Galets tendeur de courroie](./assets/idler-pulley.jpg)
+![Galets tendeur de courroie](/img/idler-pulley.jpg)
 
 Le roullement à l'intérieur du galet est scellé et ne nécessite pas de lubrification. Cependant, si un bruit de frottement ou de grincement est entendu, il est possible d'appliquer une petite quantité de lubrifiant sur le haut et le bas du galet pour améliorer son fonctionnement.
 
@@ -230,7 +254,7 @@ Le roullement à l'intérieur du galet est scellé et ne nécessite pas de lubri
 
 Pour lubrifier les galets tendeur de courroie :
 1. Appliquez une petite quantité de graisse de lubrification fournie par Bambu Lab sur le haut et le bas du galet tendeur a l'aide d'un cure-dent ou d'un petit pinceau.
-![Application de graisse sur le galet tendeur](./assets/idler-grease.png)
+![Application de graisse sur le galet tendeur](/img/idler-grease.png)
 2. Faites bouger la tête d'impression manuellement ou via l'interface pour faire tourner le galet et répartir la graisse uniformément.
 3. Répétez l'opération sur l'autre galet tendeur de courroie.
 
