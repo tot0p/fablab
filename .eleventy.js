@@ -85,7 +85,11 @@ module.exports = function(eleventyConfig) {
     ).join(' ');
   });
 
+  // Path prefix for production
+  const pathPrefix = process.env.ELEVENTY_ENV === 'production' ? '/fablab' : '';
+
   return {
+    pathPrefix: pathPrefix,
     dir: {
       input: ".",
       includes: "_includes",
