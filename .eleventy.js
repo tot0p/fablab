@@ -86,19 +86,15 @@ module.exports = function(eleventyConfig) {
 
   // Image URL filter for automatic path prefix handling
   eleventyConfig.addFilter("imgUrl", function(imgPath) {
-    const pathPrefix = process.env.ELEVENTY_ENV === 'production' ? '/fablab' : '';
     // Si le chemin commence par /, l'utiliser tel quel, sinon ajouter /img/
     if (imgPath.startsWith('/')) {
-      return `${pathPrefix}${imgPath}`;
+      return imgPath;
     }
-    return `${pathPrefix}/img/${imgPath}`;
+    return `/img/${imgPath}`;
   });
 
-  // Path prefix for production
-  const pathPrefix = process.env.ELEVENTY_ENV === 'production' ? '/fablab' : '';
-
   return {
-    pathPrefix: pathPrefix,
+    pathPrefix: '',
     dir: {
       input: ".",
       includes: "_includes",
