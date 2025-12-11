@@ -34,6 +34,7 @@ jobs:
             find . -maxdepth 1 -not -name '.git' -not -name '.github' -not -name '_site' -not -name '.' -exec rm -rf {} +
             # Copy built site to root
             cp -r _site/* .
+            rm -rf _site
             # Add and commit changes
             git add .
             git commit -m "Deploy site" || exit 0
