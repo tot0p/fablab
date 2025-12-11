@@ -25,8 +25,9 @@
 
 ---
 
-> [!CAUTION]
-> Avant d'effectuer toute opération d'entretient ou de maintenance, assurez-vous que l'imprimante est hors tension, débranchée et refroidie pour éviter tout risque de choc électrique ou de brûlure.
+::: CAUTION
+Avant d'effectuer toute opération d'entretient ou de maintenance, assurez-vous que l'imprimante est hors tension, débranchée et refroidie pour éviter tout risque de choc électrique ou de brûlure.
+:::
 
 
 ## Après chaque impression (ou en fin de session d’utilisation)
@@ -132,8 +133,9 @@ Ci dessous sont lister les problèmes courants qui peuvent survenir lors de l'ut
 | L’imprimante ne s’allume pas ou écran noir                              	| [Défaut d'alimentation ou problème majeur](#5-defaut-dalimentation-ou-probleme-majeur) 	|
 
 
-> [!CAUTION]
-> Sauf indication contraire, avant d'effectuer toute opération de maintenance, assurez-vous que l'imprimante est hors tension, débranchée et refroidie pour éviter tout risque de choc électrique ou de brûlure.
+::: CAUTION
+Sauf indication contraire, avant d'effectuer toute opération de maintenance, assurez-vous que l'imprimante est hors tension, débranchée et refroidie pour éviter tout risque de choc électrique ou de brûlure.
+:::
 
 # Guides de maintenance détaillés
 ## 1. Défaut d'extrusion
@@ -219,12 +221,14 @@ la P1S comporte plusieurs axes et tiges linéaires nécessitant un entretien ré
 Pour nettoyer l'axe X en carbone :
 1. Utilisez un chiffon doux et sec pour essuyer la surface de l'axe en carbone, en enlevant toute poussière ou débris.
 
-> [!IMPORTANT]
-> N'appliquez pas de lubrifiant sur l'axe en carbone, car il est auto-lubrifiant et l'ajout de lubrifiant pourrait attirer la poussière et nuire a son déplacement.
+::: IMPORTANT
+N'appliquez pas de lubrifiant sur l'axe en carbone, car il est auto-lubrifiant et l'ajout de lubrifiant pourrait attirer la poussière et nuire a son déplacement.
+:::
 
 ### Nettoyage et lubrification des tiges linéaires Y-Z
-> [!IMPORTANT]
-> Le nettoyage et la lubrification des axes ne devrais être effectués que lorsque l'imprimante produit des bruits inhabituels ou si des problèmes de mouvement sont détectés.
+::: IMPORTANT
+Le nettoyage et la lubrification des axes ne devrais être effectués que lorsque l'imprimante produit des bruits inhabituels ou si des problèmes de mouvement sont détectés.
+:::
 
 Pour nettoyer et lubrifier les tiges linéaires Y-Z :
 1. Utilisez un chiffon doux et sec pour essuyer la surface des tiges linéaires, en enlevant toute poussière ou débris.
@@ -249,8 +253,9 @@ Les galets tendeur de courroie permettent de maintenir la tension correcte des c
 
 Le roullement à l'intérieur du galet est scellé et ne nécessite pas de lubrification. Cependant, si un bruit de frottement ou de grincement est entendu, il est possible d'appliquer une petite quantité de lubrifiant sur le haut et le bas du galet pour améliorer son fonctionnement.
 
-> [!IMPORTANT]
-> N'appliquez pas de lubrifiant sur la courroie elle-même, car cela pourrait entraîner un glissement et affecter la précision de l'imprimante
+::: IMPORTANT
+N'appliquez pas de lubrifiant sur la courroie elle-même, car cela pourrait entraîner un glissement et affecter la précision de l'imprimante
+:::
 
 Pour lubrifier les galets tendeur de courroie :
 1. Appliquez une petite quantité de graisse de lubrification fournie par Bambu Lab sur le haut et le bas du galet tendeur a l'aide d'un cure-dent ou d'un petit pinceau.
