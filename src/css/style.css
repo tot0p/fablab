@@ -178,7 +178,7 @@ body {
     transition: transform 0.2s ease;
 }
 
-.nav-dropdown.open .dropdown-arrow {
+.nav-dropdown.open > .nav-dropdown-toggle > .dropdown-arrow {
     transform: rotate(90deg);
 }
 
