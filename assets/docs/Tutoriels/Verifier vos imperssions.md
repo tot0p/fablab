@@ -167,7 +167,7 @@ Utilise les outils de visualisation :
 - [ ] **Le plateau est propre**
   - Pas de résidus de précédentes impressions
   - Surface plane sans déformations
-  - [Guide de nettoyage du plateau](../../Maintenance/Imprimante%203D.md#nettoyage-du-plateau-dimpression)
+  - [Guide de nettoyage du plateau](../../Maintenance/Imprimante%203D#nettoyage-du-plateau-dimpression)
   
 - [ ] **Le bon plateau est installé**
   - Plateau texturé PEI pour PLA/PETG (standard)
