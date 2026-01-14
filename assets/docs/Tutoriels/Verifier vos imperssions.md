@@ -66,12 +66,17 @@ Avant même de commencer, assure-toi que le profil d'imprimante selectionné dan
   - Vérifie visuellement sur l'imprimante
   - Consulte l'affichage de l'imprimante pour confirmation
 
+- [] **Les impressions multicolores sont interdites** ⚠️
+  - Utilise un seul filament par impression
+  - Pas de changement de couleur en cours d'impression
+  - pour plusieurs objects en plusieur couleurs, activier l'impression séquentielle par objet avec chaque objet imprimé d'une seule couleur
+
 ### Profil d'Impression
 
 - [] **Un profil adapté est sélectionné**
-  - **0.28 mm Rapide** : brouillons, pièces fonctionnelles sans détails fins
+  - **0.28 mm Rapide** ⚡ : brouillons, pièces fonctionnelles sans détails fins
   - **0.20 mm Standard** : bon équilibre qualité/vitesse (recommandé)
-  - **0.16 mm Qualité** : pièces détaillées, finition soignée
+  - **0.16 mm Qualité** 💎 : pièces détaillées, finition soignée
   
 ![sélection du profil d'impression](/img/selection-profil-impression.png)
 
@@ -82,15 +87,17 @@ Avant même de commencer, assure-toi que le profil d'imprimante selectionné dan
   - Désactive-les si le modèle s'autosupporte (comme le Benchy)
   
 - [] **Le type de support est adapté**
-  - **Arbres** :  pour la plupart des cas, prend moins de filament et est plus facile à enlever
+  - **Arbres** : pour la plupart des cas, prend moins de filament et est plus facile à enlever
   - **Normal** : pour les pièces qui ne nécessitent pas beaucoup de supports
 
-### Remplissage
+### 🧱 Remplissage
 
 - [] **La densité de remplissage est appropriée**
   - **5-10%** : pièces décoratives légères
   - **15-20%** : usage standard (recommandé)
-  - **30-50%** : pièces fonctionnelles résistantes
+  - **30-50%** : pièces fonctionnelles résistantes  
+  
+pour les petites pièces (boucles d'oreilles, petits objets) privilégier un remplissage plus élevé pour éviter les déformations
 
 ### Adhérence au Plateau
 
@@ -110,7 +117,7 @@ Avant même de commencer, assure-toi que le profil d'imprimante selectionné dan
   
 ![aperçu du tranchage avec les couches visibles](/img/preview-slicing-layers.png)
 
-- [] **Le temps d'impression est raisonnable**
+- [] **Le temps d'impression est raisonnable** ⏰
   - Compare avec tes attentes
   - Pour le fablab : évite les impressions > 2/3h sans validation
   
@@ -140,7 +147,7 @@ Utilise les outils de visualisation :
 
 ### Choix de la Bonne Imprimante
 
-**C'est crucial !** Le fablab possède plusieurs imprimantes. Assure-toi de sélectionner la bonne avant d'envoyer l'impression.
+**C'est crucial !** ⚠️ Le fablab possède plusieurs imprimantes. Assure-toi de sélectionner la bonne avant d'envoyer l'impression.
 
 - [] **Vérifie le nom de l'imprimante avant d'envoyer**
   - Dans Bambu Studio : **Imprimer Plateau** → Sélectionne la bonne imprimante
@@ -181,7 +188,7 @@ Utilise les outils de visualisation :
 
 ## 6. Validation Finale
 
-### ✓ Avant d'Appuyer sur "Envoyer"
+### Avant d'Appuyer sur "Envoyer"
 
 - [] **Récapitulatif des informations**
   - Nom du fichier explicite
@@ -253,18 +260,18 @@ Imprime ou garde cette checklist à portée de main !
 
 ## Résumé
 
-Cette checklist peut sembler longue, mais avec l'habitude elle devient un réflexe rapide qui te prendra moins de 2 minutes.
+Cette checklist peut sembler longue, mais avec l'habitude elle devient un réflexe rapide qui te prendra moins de 2 minutes. ⏱️
 
 **Les points les plus critiques à ne jamais oublier :**
 
-1. ✅ **Vérifier la bonne imprimante** avant d'envoyer
-2. ✅ **Vérifier le bon filament** dans Bambu Studio ET sur l'imprimante
-3. ✅ **Vérifier le temps et la quantité** de filament nécessaire
-4. ✅ **Inspecter visuellement** la tranche avant d'envoyer
-5. ✅ **Surveiller la première couche** après envoi
+1. [x] **Vérifier la bonne imprimante** avant d'envoyer
+2. [x] **Vérifier le bon filament** dans Bambu Studio ET sur l'imprimante
+3. [x] **Vérifier le temps et la quantité** de filament nécessaire
+4. [x] **Inspecter visuellement** la tranche avant d'envoyer
+5. [x] **Surveiller la première couche** après envoi
 
 Une bonne préparation = une impression réussie ! 🎯
 
-Si tu as le moindre doute, n'hésite pas à demander à ton chef de projet. Il vaut mieux poser une question que de gaspiller du temps et du filament.
+Si tu as le moindre doute, n'hésite pas à demander à ton chef de projet. Il vaut mieux poser une question que de gaspiller du temps et du filament. 💡
 
 Bonne impression ! 🚀
