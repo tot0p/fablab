@@ -20,8 +20,8 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: "#"
   }).use(markdownItTaskLists, {
     enabled: true,
-    label: true,
-    labelAfter: true
+    label: false,
+    labelAfter: false
   });
 
   // GitHub-style alerts
