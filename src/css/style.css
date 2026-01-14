@@ -10,6 +10,13 @@
     --primary-hover: #1d4ed8;
     --secondary-color: #64748b;
     --accent-color: #f59e0b;
+    --sidebar-width: 280px;
+    --border-radius: 8px;
+    --transition: all 0.2s ease-in-out;
+}
+
+/* Light mode (default) */
+:root {
     --background: #ffffff;
     --surface: #f8fafc;
     --surface-hover: #f1f5f9;
@@ -20,9 +27,50 @@
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --sidebar-width: 280px;
-    --border-radius: 8px;
-    --transition: all 0.2s ease-in-out;
+}
+
+/* Dark mode via prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0f172a;
+        --surface: #1e293b;
+        --surface-hover: #334155;
+        --border: #334155;
+        --text-primary: #f1f5f9;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+    }
+}
+
+/* Manual dark mode class (overrides prefers-color-scheme) */
+[data-theme="dark"] {
+    --background: #0f172a;
+    --surface: #1e293b;
+    --surface-hover: #334155;
+    --border: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+}
+
+/* Manual light mode class (overrides prefers-color-scheme) */
+[data-theme="light"] {
+    --background: #ffffff;
+    --surface: #f8fafc;
+    --surface-hover: #f1f5f9;
+    --border: #e2e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 html {
@@ -34,12 +82,59 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--background);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Layout */
 .layout {
     display: flex;
     min-height: 100vh;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    font-size: 1.5rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.theme-toggle:hover {
+    background: var(--surface-hover);
+}
+
+.theme-icon {
+    display: none;
+}
+
+/* Default: show moon in light mode, sun in dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .theme-icon-light {
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme]) .theme-icon-dark {
+        display: block;
+    }
+}
+
+/* Manual theme overrides */
+[data-theme="dark"] .theme-icon-light {
+    display: block;
+}
+
+[data-theme="light"] .theme-icon-dark {
+    display: block;
 }
 
 /* Mobile Menu Toggle */
@@ -87,11 +182,16 @@ body {
 .sidebar-header {
     padding: 2rem 1.5rem 1rem;
     border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .logo {
     text-decoration: none;
     color: var(--text-primary);
+    flex: 1;
 }
 
 .logo h2 {
@@ -518,6 +618,17 @@ body {
     margin: 1.5rem auto;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
+}
+
+/* Dark mode image adjustments */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .doc-content img {
+        opacity: 0.9;
+    }
+}
+
+[data-theme="dark"] .doc-content img {
+    opacity: 0.9;
 }
 
 .doc-footer {
