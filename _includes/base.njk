@@ -31,6 +31,13 @@
             </div>
             
             <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
                 <!-- Home Link -->
                 <a href="{{ '/' | url }}" class="nav-item {{ 'active' if page.url == '/' }}">
                     <span class="nav-icon">🏠</span>

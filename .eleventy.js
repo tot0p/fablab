@@ -136,6 +136,25 @@ module.exports = function(eleventyConfig) {
     ).join(' ');
   });
 
+  // Strip HTML tags filter
+  eleventyConfig.addFilter("striptags", function(str) {
+    if (!str) return '';
+    return str.replace(/<[^>]*>/g, '').replace(/&[^;]+;/g, ' ');
+  });
+
+  // Truncate filter
+  eleventyConfig.addFilter("truncate", function(str, length = 500) {
+    if (!str) return '';
+    if (str.length <= length) return str;
+    return str.substring(0, length);
+  });
+  
+  // Split filter
+  eleventyConfig.addFilter("split", function(str, separator) {
+    if (!str) return [];
+    return str.split(separator);
+  });
+
   // Image URL filter for automatic path prefix handling
   eleventyConfig.addFilter("imgUrl", function(imgPath) {
     // Si le chemin commence par /, l'utiliser tel quel, sinon ajouter /img/
