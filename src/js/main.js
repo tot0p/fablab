@@ -86,12 +86,33 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            
+            // Decode the URL to handle accented characters
+            const href = this.getAttribute('href');
+            const decodedHref = decodeURIComponent(href);
+            
+            try {
+                const target = document.querySelector(decodedHref);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Update URL hash without jumping
+                    history.pushState(null, null, href);
+                }
+            } catch (e) {
+                // If selector is still invalid, try using getElementById
+                const id = decodedHref.substring(1);
+                const target = document.getElementById(id);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    history.pushState(null, null, href);
+                }
             }
         });
     });

@@ -8,6 +8,23 @@ module.exports = function(eleventyConfig) {
   // Add syntax highlighting plugin
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // GitHub-style slugify function that preserves accents
+  const slugify = (s) => {
+    return String(s)
+      .toLowerCase()
+      .trim()
+      // Replace spaces with hyphens first
+      .replace(/\s+/g, '-')
+      // Remove special characters but keep accented letters, numbers, and hyphens
+      .replace(/[^\w\u00C0-\u024F\u1E00-\u1EFF-]/g, '')
+      // Remove periods after numbers (but keep the numbers)
+      .replace(/(\d+)\./g, '$1')
+      // Replace multiple hyphens with single hyphen
+      .replace(/-+/g, '-')
+      // Remove leading/trailing hyphens
+      .replace(/^-+|-+$/g, '');
+  };
+
   // Configure Markdown
   let markdownLibrary = markdownIt({
     html: true,
@@ -17,7 +34,8 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.headerLink(),
     permalinkClass: "direct-link",
-    permalinkSymbol: "#"
+    permalinkSymbol: "#",
+    slugify: slugify
   }).use(markdownItTaskLists, {
     enabled: true,
     label: false,
