@@ -28,21 +28,21 @@ Avant même de commencer, assure-toi que le profil d'imprimante selectionné dan
 
 ### Position et Orientation
 
-- [] **Le modèle est bien positionné sur le plateau**
+- [ ] **Le modèle est bien positionné sur le plateau**
   - Pas de débordement en dehors de la zone d'impression
   - Le modèle ne touche pas les bords du plateau
   
-- [] **L'orientation est optimale**
+- [ ] **L'orientation est optimale**
   - Les grandes surfaces planes sont vers le bas pour une meilleure adhérence
   - Les détails importants ne sont pas orientés vers le bas
   
-- [] **Le modèle est à la bonne échelle**
+- [ ] **Le modèle est à la bonne échelle**
   - Vérifie les dimensions affichées
   - Compare avec les dimensions souhaitées
 
 ### Intégrité du Fichier
 
-- [] **Le modèle n'affiche pas d'erreurs**
+- [ ] **Le modèle n'affiche pas d'erreurs**
   - Pas de triangles inversés (visibles en rouge)
   - Pas de message "non-manifold" ou "trous"
   - Si erreurs : utilise la fonction "Réparer" de Bambu Studio
@@ -55,25 +55,25 @@ Avant même de commencer, assure-toi que le profil d'imprimante selectionné dan
 
 ### Filament
 
-- [] **Le bon filament est sélectionné dans Bambu Studio**
+- [ ] **Le bon filament est sélectionné dans Bambu Studio**
   - Vérifie le type : PLA, PETG, ABS, etc.
   - Vérifie la couleur si important pour ton projet
   
 ![panneau de sélection du filament](/img/sync-filaments.png)
 
-- [] **Le filament correspond à ce qui est chargé dans l'imprimante**
+- [ ] **Le filament correspond à ce qui est chargé dans l'imprimante**
   - Synchronise les filaments a chaque préparation d'impression
   - Vérifie visuellement sur l'imprimante
   - Consulte l'affichage de l'imprimante pour confirmation
 
-- [] **Les impressions multicolores sont interdites** ⚠️
+- [ ] **Les impressions multicolores sont interdites** ⚠️
   - Utilise un seul filament par impression
   - Pas de changement de couleur en cours d'impression
   - pour plusieurs objects en plusieur couleurs, activier l'impression séquentielle par objet avec chaque objet imprimé d'une seule couleur
 
 ### Profil d'Impression
 
-- [] **Un profil adapté est sélectionné**
+- [ ] **Un profil adapté est sélectionné**
   - **0.28 mm Rapide** ⚡ : brouillons, pièces fonctionnelles sans détails fins
   - **0.20 mm Standard** : bon équilibre qualité/vitesse (recommandé)
   - **0.16 mm Qualité** 💎 : pièces détaillées, finition soignée
@@ -82,17 +82,17 @@ Avant même de commencer, assure-toi que le profil d'imprimante selectionné dan
 
 ### Supports
 
-- [] **Les supports sont activés si nécessaire**
+- [ ] **Les supports sont activés si nécessaire**
   - Active les supports pour les surplombs > 45°
   - Désactive-les si le modèle s'autosupporte (comme le Benchy)
   
-- [] **Le type de support est adapté**
+- [ ] **Le type de support est adapté**
   - **Arbres** : pour la plupart des cas, prend moins de filament et est plus facile à enlever
   - **Normal** : pour les pièces qui ne nécessitent pas beaucoup de supports
 
 ### 🧱 Remplissage
 
-- [] **La densité de remplissage est appropriée**
+- [ ] **La densité de remplissage est appropriée**
   - **5-10%** : pièces décoratives légères
   - **15-20%** : usage standard (recommandé)
   - **30-50%** : pièces fonctionnelles résistantes  
@@ -101,7 +101,7 @@ pour les petites pièces (boucles d'oreilles, petits objets) privilégier un rem
 
 ### Adhérence au Plateau
 
-- [] **Adhérence supplémentaire si nécessaire**
+- [ ] **Adhérence supplémentaire si nécessaire**
   - **Brim** : pour petites surfaces ou coins qui se décollent
   - **Raft** : pour pièces difficiles ou surface du plateau abîmée
   - **Jupe (Skirt)** : pour amorcer l'extrudeur, pas d'adhérence supplémentaire
@@ -112,16 +112,16 @@ pour les petites pièces (boucles d'oreilles, petits objets) privilégier un rem
 
 ### Après avoir cliqué sur "Trancher le Plateau"
 
-- [] **L'aperçu se charge sans erreur**
+- [ ] **L'aperçu se charge sans erreur**
   - Pas de zones rouges ou d'alertes
   
 ![aperçu du tranchage avec les couches visibles](/img/preview-slicing-layers.png)
 
-- [] **Le temps d'impression est raisonnable** ⏰
+- [ ] **Le temps d'impression est raisonnable** ⏰
   - Compare avec tes attentes
   - Pour le fablab : évite les impressions > 2/3h sans validation
   
-- [] **La quantité de filament est cohérente**
+- [ ] **La quantité de filament est cohérente**
   - Vérifie que tu as assez de filament dans la bobine
   - Pour le fablab : limite à environ 80/100g sans validation
 
@@ -129,15 +129,15 @@ pour les petites pièces (boucles d'oreilles, petits objets) privilégier un rem
 
 Utilise les outils de visualisation :
 
-- [] **Active la vue "Couche par couche"**
+- [ ] **Active la vue "Couche par couche"**
   - Vérifie que les premières couches couvrent bien le plateau
   - Inspecte les zones critiques (surplombs, ponts)
   
-- [] **Vérifie les trajectoires**
+- [ ] **Vérifie les trajectoires**
   - Les périmètres sont complets
   - Le remplissage atteint bien les bords
   
-- [] **Inspecte les supports**
+- [ ] **Inspecte les supports**
   - Ils touchent bien les zones en surplomb
   - Ils ne sont pas trop denses (gaspillage)
 
@@ -149,37 +149,37 @@ Utilise les outils de visualisation :
 
 **C'est crucial !** ⚠️ Le fablab possède plusieurs imprimantes. Assure-toi de sélectionner la bonne avant d'envoyer l'impression.
 
-- [] **Vérifie le nom de l'imprimante avant d'envoyer**
+- [ ] **Vérifie le nom de l'imprimante avant d'envoyer**
   - Dans Bambu Studio : **Imprimer Plateau** → Sélectionne la bonne imprimante
   - Imprimante "Gauche" ou "Droite" selon la disponibilité
   
 ![lancement de l'impression](/img/send-print.png)
 
-- [] **Vérifie la disponibilité**
+- [ ] **Vérifie la disponibilité**
   - L'imprimante n'est pas déjà en cours d'impression
   
-- [] **Vérifie l'état de l'imprimante**
+- [ ] **Vérifie l'état de l'imprimante**
   - Pas d'erreur affichée sur l'écran
   - Pas de filament emmêlé ou de problèmes visibles
 
 ### État du Plateau
 
-- [] **Le plateau est propre**
+- [ ] **Le plateau est propre**
   - Pas de résidus de précédentes impressions
   - Surface plane sans déformations
-  - [Guide de nettoyage du plateau](../Maintenance/Imprimante%203D.md#nettoyage-du-plateau-dimpression)
+  - [Guide de nettoyage du plateau](../../Maintenance/Imprimante%203D.md#nettoyage-du-plateau-dimpression)
   
-- [] **Le bon plateau est installé**
+- [ ] **Le bon plateau est installé**
   - Plateau texturé PEI pour PLA/PETG (standard)
   - Plateau lisse pour ABS ou pièces nécessitant une finition brillante
 
 ### Chargement du Filament
 
-- [] **Le bon filament est chargé**
+- [ ] **Le bon filament est chargé**
   - Type correspondant à ta sélection (PLA, PETG, etc.)
   - Couleur souhaitée
   
-- [] **Le filament est en bon état**
+- [ ] **Le filament est en bon état**
   - Pas de nœuds dans la bobine
   - Le filament n'est pas cassant ou humide
   - Suffisamment de matière dans la bobine
@@ -190,27 +190,27 @@ Utilise les outils de visualisation :
 
 ### Avant d'Appuyer sur "Envoyer"
 
-- [] **Récapitulatif des informations**
+- [ ] **Récapitulatif des informations**
   - Nom du fichier explicite
   - Imprimante correcte sélectionnée
   - Profil de filament correct
   
-- [] **Demande de validation si nécessaire**
+- [ ] **Demande de validation si nécessaire**
   - Si impression > 2h : demande validation au chef de projet
   - Si première impression d'un modèle complexe : demande validation
 
-- [] **Tu es disponible**
+- [ ] **Tu es disponible**
   - Les 15-20 premières minutes pour surveiller le début
   - La fin de l'impression pour récupérer la pièce
 
 ### Après avoir Envoyé
 
-- [] **Surveille le début de l'impression**
+- [ ] **Surveille le début de l'impression**
   - La première couche adhère bien
   - Pas de problème d'extrusion
   - Le modèle démarre au bon endroit
   
-- [] **Note les informations**
+- [ ] **Note les informations**
   - Heure de début
   - Heure de fin estimée
   - Imprimante utilisée
@@ -223,38 +223,38 @@ Imprime ou garde cette checklist à portée de main !
 
 ### 📋 Avant de Trancher
 
-- [] Modèle correctement positionné et orienté
-- [] Modèle à la bonne échelle
-- [] Pas d'erreurs de géométrie
-- [] Bon profil d'imprimante sélectionné
-- [] Bon filament sélectionné
-- [] Profil d'impression adapté (vitesse/qualité)
-- [] Supports activés si nécessaire
-- [] Densité de remplissage appropriée
-- [] Adhérence au plateau configurée
+- [ ] Modèle correctement positionné et orienté
+- [ ] Modèle à la bonne échelle
+- [ ] Pas d'erreurs de géométrie
+- [ ] Bon profil d'imprimante sélectionné
+- [ ] Bon filament sélectionné
+- [ ] Profil d'impression adapté (vitesse/qualité)
+- [ ] Supports activés si nécessaire
+- [ ] Densité de remplissage appropriée
+- [ ] Adhérence au plateau configurée
 
 ### 📋 Après le Tranchage
 
-- [] Pas d'erreurs ou zones rouges
-- [] Temps d'impression acceptable
-- [] Quantité de filament suffisante et raisonnable
-- [] Inspection visuelle des couches OK
-- [] Supports bien placés
+- [ ] Pas d'erreurs ou zones rouges
+- [ ] Temps d'impression acceptable
+- [ ] Quantité de filament suffisante et raisonnable
+- [ ] Inspection visuelle des couches OK
+- [ ] Supports bien placés
 
 ### 📋 Avant d'Envoyer
 
-- [] **BONNE IMPRIMANTE SÉLECTIONNÉE** ⚠️
-- [] Imprimante disponible
-- [] Plateau propre et adapté
-- [] Bon filament chargé dans l'imprimante
-- [] Validation obtenue si nécessaire
-- [] Disponible pour surveiller
+- [ ] **BONNE IMPRIMANTE SÉLECTIONNÉE** ⚠️
+- [ ] Imprimante disponible
+- [ ] Plateau propre et adapté
+- [ ] Bon filament chargé dans l'imprimante
+- [ ] Validation obtenue si nécessaire
+- [ ] Disponible pour surveiller
 
 ### 📋 Après Envoi
 
-- [] Surveillance des premières couches
-- [] Première couche adhère correctement
-- [] Pas de problème d'extrusion
+- [ ] Surveillance des premières couches
+- [ ] Première couche adhère correctement
+- [ ] Pas de problème d'extrusion
 
 ---
 
