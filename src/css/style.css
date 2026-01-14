@@ -395,6 +395,44 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Task list styles (checkboxes) */
+.doc-content .task-list-item {
+    list-style-type: none;
+    margin-left: -1.5rem;
+    padding-left: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.doc-content .task-list-item-checkbox {
+    margin-top: 0.3rem;
+    flex-shrink: 0;
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+.doc-content .task-list-item-checkbox[disabled] {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.doc-content .task-list-item-label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.doc-content ul.contains-task-list {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.doc-content ul.contains-task-list > .task-list-item {
+    margin-left: 0;
+}
+
 .doc-content a {
     color: var(--primary-color);
     text-decoration: none;

@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItContainer = require("markdown-it-container");
+const markdownItTaskLists = require("markdown-it-task-lists");
 
 module.exports = function(eleventyConfig) {
   // Add syntax highlighting plugin
@@ -11,11 +12,16 @@ module.exports = function(eleventyConfig) {
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
-    linkify: true
+    linkify: true,
+    typographer: true
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.headerLink(),
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
+  }).use(markdownItTaskLists, {
+    enabled: true,
+    label: true,
+    labelAfter: true
   });
 
   // GitHub-style alerts
