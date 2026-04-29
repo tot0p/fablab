@@ -8,6 +8,23 @@ module.exports = function(eleventyConfig) {
   // Add syntax highlighting plugin
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // GitHub-style slugify function that preserves accents
+  const slugify = (s) => {
+    return String(s)
+      .toLowerCase()
+      .trim()
+      // Replace spaces with hyphens first
+      .replace(/\s+/g, '-')
+      // Remove special characters but keep accented letters, numbers, and hyphens
+      .replace(/[^\w\u00C0-\u024F\u1E00-\u1EFF-]/g, '')
+      // Remove periods after numbers (but keep the numbers)
+      .replace(/(\d+)\./g, '$1')
+      // Replace multiple hyphens with single hyphen
+      .replace(/-+/g, '-')
+      // Remove leading/trailing hyphens
+      .replace(/^-+|-+$/g, '');
+  };
+
   // Configure Markdown
   let markdownLibrary = markdownIt({
     html: true,
@@ -17,11 +34,12 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.headerLink(),
     permalinkClass: "direct-link",
-    permalinkSymbol: "#"
+    permalinkSymbol: "#",
+    slugify: slugify
   }).use(markdownItTaskLists, {
     enabled: true,
-    label: true,
-    labelAfter: true
+    label: false,
+    labelAfter: false
   });
 
   // GitHub-style alerts
@@ -116,6 +134,25 @@ module.exports = function(eleventyConfig) {
     return str.split(' ').map(word => 
       word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
     ).join(' ');
+  });
+
+  // Strip HTML tags filter
+  eleventyConfig.addFilter("striptags", function(str) {
+    if (!str) return '';
+    return str.replace(/<[^>]*>/g, '').replace(/&[^;]+;/g, ' ');
+  });
+
+  // Truncate filter
+  eleventyConfig.addFilter("truncate", function(str, length = 500) {
+    if (!str) return '';
+    if (str.length <= length) return str;
+    return str.substring(0, length);
+  });
+  
+  // Split filter
+  eleventyConfig.addFilter("split", function(str, separator) {
+    if (!str) return [];
+    return str.split(separator);
   });
 
   // Image URL filter for automatic path prefix handling

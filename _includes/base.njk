@@ -24,9 +24,20 @@
                 <a href="{{ '/' | url }}" class="logo">
                     <h2>🔬 Fablab Docs</h2>
                 </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
             </div>
             
             <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
                 <!-- Home Link -->
                 <a href="{{ '/' | url }}" class="nav-item {{ 'active' if page.url == '/' }}">
                     <span class="nav-icon">🏠</span>
