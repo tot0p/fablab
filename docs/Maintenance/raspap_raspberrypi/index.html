@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspap_raspberrypi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Raspap_raspberrypi</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="point-daccès-wifi-avec-raspap-sur-raspberry-pi-une-seule-carte-wifi" tabindex="-1"><a class="header-anchor" href="#point-daccès-wifi-avec-raspap-sur-raspberry-pi-une-seule-carte-wifi">Point d’accès Wi‑Fi avec RaspAP sur Raspberry Pi (une seule carte Wi‑Fi)</a></h1>
+<h2 id="objectif" tabindex="-1"><a class="header-anchor" href="#objectif">Objectif</a></h2>
+<p>Faire fonctionner un point d’accès Wi‑Fi sur un Raspberry Pi avec une seule carte Wi‑Fi :</p>
+<ul>
+<li><code>wlan0</code> reste connecté au Wi‑Fi existant pour Internet ;</li>
+<li><code>wlan0-ap</code> (interface virtuelle) sert de point d’accès géré par RaspAP.</li>
+</ul>
+<hr>
+<h2 id="1-connexion-au-wifi-existant-avec-wpa_supplicant" tabindex="-1"><a class="header-anchor" href="#1-connexion-au-wifi-existant-avec-wpa_supplicant">1. Connexion au Wi‑Fi existant avec <code>wpa_supplicant</code></a></h2>
+<p>Le Raspberry Pi doit d’abord être connecté au Wi‑Fi pour avoir Internet.</p>
+<p>Exemple de configuration WPA Enterprise (<code>/etc/wpa_supplicant/wpa_supplicant.conf</code>) :</p>
+<pre class="language-conf"><code class="language-conf">network={
+    ssid="WIFI@YNOV"
+    key_mgmt=WPA-EAP
+    eap=PEAP
+    identity="UTILISATEUR"
+    password="MOT_DE_PASSE"
+    phase2="auth=MSCHAPV2"
+}</code></pre>
+<p>Recharger la configuration :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> wpa_cli <span class="token parameter variable">-i</span> wlan0 reconfigure</code></pre>
+<hr>
+<h2 id="2-création-de-linterface-wifi-virtuelle-pour-lap" tabindex="-1"><a class="header-anchor" href="#2-création-de-linterface-wifi-virtuelle-pour-lap">2. Création de l’interface Wi‑Fi virtuelle pour l’AP</a></h2>
+<p>Vérifier que la carte supporte le mode <strong>client + AP</strong> simultanément :</p>
+<pre class="language-bash"><code class="language-bash">iw list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-A10</span> <span class="token string">"valid interface combinations"</span></code></pre>
+<p>Créer l’interface virtuelle :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> iw dev wlan0 interface <span class="token function">add</span> wlan0-ap <span class="token builtin class-name">type</span> ap
+iw dev</code></pre>
+<hr>
+<h2 id="3-configuration-de-lap-dans-raspap" tabindex="-1"><a class="header-anchor" href="#3-configuration-de-lap-dans-raspap">3. Configuration de l’AP dans RaspAP</a></h2>
+<p>Créer <code>wlan0-ap</code> ne suffit pas : il faut indiquer à RaspAP de l’utiliser.</p>
+<p>Dans l’interface web de RaspAP, section <strong>Hotspot</strong> :</p>
+<pre class="language-text"><code class="language-text">Interface hotspot : wlan0-ap
+SSID : fablab
+Mode : Access Point / AP
+Sécurité : WPA/WPA2
+Mot de passe : mot de passe du hotspot</code></pre>
+<p>Enregistrer puis redémarrer le hotspot.</p>
+<hr>
+<h2 id="4-accès-à-linterface-raspap" tabindex="-1"><a class="header-anchor" href="#4-accès-à-linterface-raspap">4. Accès à l’interface RaspAP</a></h2>
+<pre class="language-text"><code class="language-text">URL       : http://192.168.50.1
+Utilisateur : admin
+Mot de passe : secret</code></pre>
+<hr>
+<h2 id="5-redémarrage-du-hotspot-en-cas-de-perte-dinternet" tabindex="-1"><a class="header-anchor" href="#5-redémarrage-du-hotspot-en-cas-de-perte-dinternet">5. Redémarrage du hotspot en cas de perte d’Internet</a></h2>
+<ol>
+<li>ouvrir <code>http://192.168.50.1</code> ;</li>
+<li>se connecter à RaspAP ;</li>
+<li>aller dans <strong>Hotspot</strong> ;</li>
+<li>cliquer sur le bouton de redémarrage du hotspot.</li>
+</ol>
+<hr>
+<h2 id="6-commandes-utiles" tabindex="-1"><a class="header-anchor" href="#6-commandes-utiles">6. Commandes utiles</a></h2>
+<p>Diagnostic :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">ip</span> a
+iw dev
+iw dev wlan0 <span class="token function">link</span>
+<span class="token function">ping</span> google.com</code></pre>
+<p>Recréer l’interface virtuelle :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> iw dev wlan0 interface <span class="token function">add</span> wlan0-ap <span class="token builtin class-name">type</span> ap</code></pre>
+<p>Supprimer l’interface virtuelle :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> iw dev wlan0-ap del</code></pre>
+<hr>
+<h2 id="schéma-final" tabindex="-1"><a class="header-anchor" href="#schéma-final">Schéma final</a></h2>
+<pre class="language-text"><code class="language-text">Internet Wi‑Fi existant
+        ↓
+wlan0 (Raspberry Pi)
+        ↓
+wlan0-ap (interface virtuelle)
+        ↓
+RaspAP → Hotspot Wi‑Fi "fablab"
+        ↓
+Clients connectés</code></pre>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

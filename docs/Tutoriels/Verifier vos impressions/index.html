@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifier Vos Impressions</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Verifier Vos Impressions</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="checklist-de-vérification-pré-impression" tabindex="-1"><a class="header-anchor" href="#checklist-de-vérification-pré-impression">Checklist de Vérification Pré-Impression</a></h1>
+<p>Avant de lancer ton impression 3D, il est essentiel de vérifier plusieurs points pour éviter les erreurs et le gaspillage de filament. Ce guide te présente une checklist complète à suivre systématiquement avant d’envoyer ton fichier à l’imprimante.</p>
+<h2 id="sommaire" tabindex="-1"><a class="header-anchor" href="#sommaire">Sommaire</a></h2>
+<ol>
+<li><a href="#1-v%C3%A9rifications-dans-bambu-studio">Vérifications dans Bambu Studio</a></li>
+<li><a href="#2-v%C3%A9rifications-du-mod%C3%A8le-3d">Vérifications du Modèle 3D</a></li>
+<li><a href="#3-v%C3%A9rifications-des-param%C3%A8tres-dimpression">Vérifications des Paramètres d’Impression</a></li>
+<li><a href="#4-v%C3%A9rifications-du-tranchage-slice">Vérifications du Tranchage (Slice)</a></li>
+<li><a href="#5-v%C3%A9rifications-de-limprimante">Vérifications de l’Imprimante</a></li>
+<li><a href="#6-validation-finale">Validation Finale</a></li>
+<li><a href="#checklist-r%C3%A9capitulative">Checklist Récapitulative</a></li>
+</ol>
+<hr>
+<h2 id="1-vérifications-dans-bambu-studio" tabindex="-1"><a class="header-anchor" href="#1-vérifications-dans-bambu-studio">1. Vérifications dans Bambu Studio</a></h2>
+<h3 id="configuration-de-base" tabindex="-1"><a class="header-anchor" href="#configuration-de-base">Configuration de Base</a></h3>
+<p>Avant même de commencer, assure-toi que le profil d’imprimante selectionné dans Bambu Studio correspond bien à l’imprimante que tu vas utiliser. (P1S dans le cas du fablab)</p>
+<p><img src="/img/menu-imprimante.png" alt="menu imprimante"></p>
+<hr>
+<h2 id="2-vérifications-du-modèle-3d" tabindex="-1"><a class="header-anchor" href="#2-vérifications-du-modèle-3d">2. Vérifications du Modèle 3D</a></h2>
+<h3 id="position-et-orientation" tabindex="-1"><a class="header-anchor" href="#position-et-orientation">Position et Orientation</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le modèle est bien positionné sur le plateau</strong></p>
+<ul>
+<li>Pas de débordement en dehors de la zone d’impression</li>
+<li>Le modèle ne touche pas les bords du plateau</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>L’orientation est optimale</strong></p>
+<ul>
+<li>Les grandes surfaces planes sont vers le bas pour une meilleure adhérence</li>
+<li>Les détails importants ne sont pas orientés vers le bas</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le modèle est à la bonne échelle</strong></p>
+<ul>
+<li>Vérifie les dimensions affichées</li>
+<li>Compare avec les dimensions souhaitées</li>
+</ul>
+</li>
+</ul>
+<h3 id="intégrité-du-fichier" tabindex="-1"><a class="header-anchor" href="#intégrité-du-fichier">Intégrité du Fichier</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>Le modèle n’affiche pas d’erreurs</strong>
+<ul>
+<li>Pas de triangles inversés (visibles en rouge)</li>
+<li>Pas de message “non-manifold” ou “trous”</li>
+<li>Si erreurs : utilise la fonction “Réparer” de Bambu Studio</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/import-benchy-stl.png" alt="modèle correctement positionné"></p>
+<hr>
+<h2 id="3-vérifications-des-paramètres-dimpression" tabindex="-1"><a class="header-anchor" href="#3-vérifications-des-paramètres-dimpression">3. Vérifications des Paramètres d’Impression</a></h2>
+<h3 id="filament" tabindex="-1"><a class="header-anchor" href="#filament">Filament</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>Le bon filament est sélectionné dans Bambu Studio</strong>
+<ul>
+<li>Vérifie le type : PLA, PETG, ABS, etc.</li>
+<li>Vérifie la couleur si important pour ton projet</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/sync-filaments.png" alt="panneau de sélection du filament"></p>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le filament correspond à ce qui est chargé dans l’imprimante</strong></p>
+<ul>
+<li>Synchronise les filaments a chaque préparation d’impression</li>
+<li>Vérifie visuellement sur l’imprimante</li>
+<li>Consulte l’affichage de l’imprimante pour confirmation</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Les impressions multicolores sont interdites</strong> ⚠️</p>
+<ul>
+<li>Utilise un seul filament par impression</li>
+<li>Pas de changement de couleur en cours d’impression</li>
+<li>pour plusieurs objects en plusieur couleurs, activier l’impression séquentielle par objet avec chaque objet imprimé d’une seule couleur</li>
+</ul>
+</li>
+</ul>
+<h3 id="profil-dimpression" tabindex="-1"><a class="header-anchor" href="#profil-dimpression">Profil d’Impression</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>Un profil adapté est sélectionné</strong>
+<ul>
+<li><strong>0.28 mm Rapide</strong> ⚡ : brouillons, pièces fonctionnelles sans détails fins</li>
+<li><strong>0.20 mm Standard</strong> : bon équilibre qualité/vitesse (recommandé)</li>
+<li><strong>0.16 mm Qualité</strong> 💎 : pièces détaillées, finition soignée</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/selection-profil-impression.png" alt="sélection du profil d'impression"></p>
+<h3 id="supports" tabindex="-1"><a class="header-anchor" href="#supports">Supports</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Les supports sont activés si nécessaire</strong></p>
+<ul>
+<li>Active les supports pour les surplombs &gt; 45°</li>
+<li>Désactive-les si le modèle s’autosupporte (comme le Benchy)</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le type de support est adapté</strong></p>
+<ul>
+<li><strong>Arbres</strong> : pour la plupart des cas, prend moins de filament et est plus facile à enlever</li>
+<li><strong>Normal</strong> : pour les pièces qui ne nécessitent pas beaucoup de supports</li>
+</ul>
+</li>
+</ul>
+<h3 id="remplissage" tabindex="-1"><a class="header-anchor" href="#remplissage">🧱 Remplissage</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>La densité de remplissage est appropriée</strong>
+<ul>
+<li><strong>5-10%</strong> : pièces décoratives légères</li>
+<li><strong>15-20%</strong> : usage standard (recommandé)</li>
+<li><strong>30-50%</strong> : pièces fonctionnelles résistantes</li>
+</ul>
+</li>
+</ul>
+<p>pour les petites pièces (boucles d’oreilles, petits objets) privilégier un remplissage plus élevé pour éviter les déformations</p>
+<h3 id="adhérence-au-plateau" tabindex="-1"><a class="header-anchor" href="#adhérence-au-plateau">Adhérence au Plateau</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>Adhérence supplémentaire si nécessaire</strong>
+<ul>
+<li><strong>Brim</strong> : pour petites surfaces ou coins qui se décollent</li>
+<li><strong>Raft</strong> : pour pièces difficiles ou surface du plateau abîmée</li>
+<li><strong>Jupe (Skirt)</strong> : pour amorcer l’extrudeur, pas d’adhérence supplémentaire</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="4-vérifications-du-tranchage-slice" tabindex="-1"><a class="header-anchor" href="#4-vérifications-du-tranchage-slice">4. Vérifications du Tranchage (Slice)</a></h2>
+<h3 id="après-avoir-cliqué-sur-trancher-le-plateau" tabindex="-1"><a class="header-anchor" href="#après-avoir-cliqué-sur-trancher-le-plateau">Après avoir cliqué sur “Trancher le Plateau”</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>L’aperçu se charge sans erreur</strong>
+<ul>
+<li>Pas de zones rouges ou d’alertes</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/preview-slicing-layers.png" alt="aperçu du tranchage avec les couches visibles"></p>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le temps d’impression est raisonnable</strong> ⏰</p>
+<ul>
+<li>Compare avec tes attentes</li>
+<li>Pour le fablab : évite les impressions &gt; 2/3h sans validation</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>La quantité de filament est cohérente</strong></p>
+<ul>
+<li>Vérifie que tu as assez de filament dans la bobine</li>
+<li>Pour le fablab : limite à environ 80/100g sans validation</li>
+</ul>
+</li>
+</ul>
+<h3 id="inspection-visuelle-du-tranchage" tabindex="-1"><a class="header-anchor" href="#inspection-visuelle-du-tranchage">Inspection Visuelle du Tranchage</a></h3>
+<p>Utilise les outils de visualisation :</p>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Active la vue “Couche par couche”</strong></p>
+<ul>
+<li>Vérifie que les premières couches couvrent bien le plateau</li>
+<li>Inspecte les zones critiques (surplombs, ponts)</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Vérifie les trajectoires</strong></p>
+<ul>
+<li>Les périmètres sont complets</li>
+<li>Le remplissage atteint bien les bords</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Inspecte les supports</strong></p>
+<ul>
+<li>Ils touchent bien les zones en surplomb</li>
+<li>Ils ne sont pas trop denses (gaspillage)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="5-vérifications-de-limprimante" tabindex="-1"><a class="header-anchor" href="#5-vérifications-de-limprimante">5. Vérifications de l’Imprimante</a></h2>
+<h3 id="choix-de-la-bonne-imprimante" tabindex="-1"><a class="header-anchor" href="#choix-de-la-bonne-imprimante">Choix de la Bonne Imprimante</a></h3>
+<p><strong>C’est crucial !</strong> ⚠️ Le fablab possède plusieurs imprimantes. Assure-toi de sélectionner la bonne avant d’envoyer l’impression.</p>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>Vérifie le nom de l’imprimante avant d’envoyer</strong>
+<ul>
+<li>Dans Bambu Studio : <strong>Imprimer Plateau</strong> → Sélectionne la bonne imprimante</li>
+<li>Imprimante “Gauche” ou “Droite” selon la disponibilité</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/send-print.png" alt="lancement de l'impression"></p>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Vérifie la disponibilité</strong></p>
+<ul>
+<li>L’imprimante n’est pas déjà en cours d’impression</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Vérifie l’état de l’imprimante</strong></p>
+<ul>
+<li>Pas d’erreur affichée sur l’écran</li>
+<li>Pas de filament emmêlé ou de problèmes visibles</li>
+</ul>
+</li>
+</ul>
+<h3 id="état-du-plateau" tabindex="-1"><a class="header-anchor" href="#état-du-plateau">État du Plateau</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le plateau est propre</strong></p>
+<ul>
+<li>Pas de résidus de précédentes impressions</li>
+<li>Surface plane sans déformations</li>
+<li><a href="../../Maintenance/Imprimante%203D#nettoyage-du-plateau-dimpression">Guide de nettoyage du plateau</a></li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le bon plateau est installé</strong></p>
+<ul>
+<li>Plateau texturé PEI pour PLA/PETG (standard)</li>
+<li>Plateau lisse pour ABS ou pièces nécessitant une finition brillante</li>
+</ul>
+</li>
+</ul>
+<h3 id="chargement-du-filament" tabindex="-1"><a class="header-anchor" href="#chargement-du-filament">Chargement du Filament</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le bon filament est chargé</strong></p>
+<ul>
+<li>Type correspondant à ta sélection (PLA, PETG, etc.)</li>
+<li>Couleur souhaitée</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Le filament est en bon état</strong></p>
+<ul>
+<li>Pas de nœuds dans la bobine</li>
+<li>Le filament n’est pas cassant ou humide</li>
+<li>Suffisamment de matière dans la bobine</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-validation-finale" tabindex="-1"><a class="header-anchor" href="#6-validation-finale">6. Validation Finale</a></h2>
+<h3 id="avant-dappuyer-sur-envoyer" tabindex="-1"><a class="header-anchor" href="#avant-dappuyer-sur-envoyer">Avant d’Appuyer sur “Envoyer”</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Récapitulatif des informations</strong></p>
+<ul>
+<li>Nom du fichier explicite</li>
+<li>Imprimante correcte sélectionnée</li>
+<li>Profil de filament correct</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Demande de validation si nécessaire</strong></p>
+<ul>
+<li>Si impression &gt; 2h : demande validation au chef de projet</li>
+<li>Si première impression d’un modèle complexe : demande validation</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Tu es disponible</strong></p>
+<ul>
+<li>Les 15-20 premières minutes pour surveiller le début</li>
+<li>La fin de l’impression pour récupérer la pièce</li>
+</ul>
+</li>
+</ul>
+<h3 id="après-avoir-envoyé" tabindex="-1"><a class="header-anchor" href="#après-avoir-envoyé">Après avoir Envoyé</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Surveille le début de l’impression</strong></p>
+<ul>
+<li>La première couche adhère bien</li>
+<li>Pas de problème d’extrusion</li>
+<li>Le modèle démarre au bon endroit</li>
+</ul>
+</li>
+<li class="task-list-item enabled">
+<p><input class="task-list-item-checkbox"type="checkbox"> <strong>Note les informations</strong></p>
+<ul>
+<li>Heure de début</li>
+<li>Heure de fin estimée</li>
+<li>Imprimante utilisée</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="checklist-récapitulative" tabindex="-1"><a class="header-anchor" href="#checklist-récapitulative">Checklist Récapitulative</a></h2>
+<p>Imprime ou garde cette checklist à portée de main !</p>
+<h3 id="avant-de-trancher" tabindex="-1"><a class="header-anchor" href="#avant-de-trancher">📋 Avant de Trancher</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Modèle correctement positionné et orienté</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Modèle à la bonne échelle</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Pas d’erreurs de géométrie</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Bon profil d’imprimante sélectionné</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Bon filament sélectionné</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Profil d’impression adapté (vitesse/qualité)</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Supports activés si nécessaire</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Densité de remplissage appropriée</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Adhérence au plateau configurée</li>
+</ul>
+<h3 id="après-le-tranchage" tabindex="-1"><a class="header-anchor" href="#après-le-tranchage">📋 Après le Tranchage</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Pas d’erreurs ou zones rouges</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Temps d’impression acceptable</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Quantité de filament suffisante et raisonnable</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Inspection visuelle des couches OK</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Supports bien placés</li>
+</ul>
+<h3 id="avant-denvoyer" tabindex="-1"><a class="header-anchor" href="#avant-denvoyer">📋 Avant d’Envoyer</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> <strong>BONNE IMPRIMANTE SÉLECTIONNÉE</strong> ⚠️</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Imprimante disponible</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Plateau propre et adapté</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Bon filament chargé dans l’imprimante</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Validation obtenue si nécessaire</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Disponible pour surveiller</li>
+</ul>
+<h3 id="après-envoi" tabindex="-1"><a class="header-anchor" href="#après-envoi">📋 Après Envoi</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Surveillance des premières couches</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Première couche adhère correctement</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> Pas de problème d’extrusion</li>
+</ul>
+<hr>
+<h2 id="résumé" tabindex="-1"><a class="header-anchor" href="#résumé">Résumé</a></h2>
+<p>Cette checklist peut sembler longue, mais avec l’habitude elle devient un réflexe rapide qui te prendra moins de 2 minutes. ⏱️</p>
+<p><strong>Les points les plus critiques à ne jamais oublier :</strong></p>
+<ol class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> <strong>Vérifier la bonne imprimante</strong> avant d’envoyer</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> <strong>Vérifier le bon filament</strong> dans Bambu Studio ET sur l’imprimante</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> <strong>Vérifier le temps et la quantité</strong> de filament nécessaire</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> <strong>Inspecter visuellement</strong> la tranche avant d’envoyer</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> <strong>Surveiller la première couche</strong> après envoi</li>
+</ol>
+<p>Une bonne préparation = une impression réussie ! 🎯</p>
+<p>Si tu as le moindre doute, n’hésite pas à demander à ton chef de projet. Il vaut mieux poser une question que de gaspiller du temps et du filament. 💡</p>
+<p>Bonne impression ! 🚀</p>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

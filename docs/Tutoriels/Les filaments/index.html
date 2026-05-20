@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Filaments</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Les Filaments</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="les-filaments-dimpression-3d" tabindex="-1"><a class="header-anchor" href="#les-filaments-dimpression-3d">Les filaments d’impression 3D</a></h1>
+<p>L’impression 3D FDM (dépôt de filament fondu) fonctionne en faisant fondre un filament plastique pour le déposer couche par couche. Le choix du filament influence la résistance, la flexibilité, la tenue à la chaleur et la facilité d’impression.</p>
+<hr>
+<h2 id="le-pla-le-filament-du-quotidien" tabindex="-1"><a class="header-anchor" href="#le-pla-le-filament-du-quotidien">Le PLA — Le filament du quotidien</a></h2>
+<p>Le <strong>PLA</strong> (acide polylactique) est le filament <strong>le plus courant et le plus simple à imprimer</strong>. C’est le point de départ recommandé pour tous les projets.</p>
+<p><strong>Points forts :</strong></p>
+<ul>
+<li>Très facile à imprimer, peu de risque de warping</li>
+<li>Bonne qualité de surface et bonne précision</li>
+<li>Biodégradable (issu de l’amidon de maïs)</li>
+<li>Ne dégage pas d’odeurs fortes</li>
+<li>Compatible avec l’AMS (impression multicolore)</li>
+</ul>
+<p><strong>Points faibles :</strong></p>
+<ul>
+<li>Fragile aux chocs violents</li>
+<li>Mauvaise tenue à la chaleur (se déforme dès 55–60 °C)</li>
+<li>Non adapté aux pièces en extérieur sur le long terme</li>
+</ul>
+<p><strong>Idéal pour :</strong> maquettes, prototypes, objets décoratifs, pièces d’intérieur, apprentissage.</p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buse</td>
+<td>220 °C</td>
+</tr>
+<tr>
+<td>Plateau</td>
+<td>35 °C</td>
+</tr>
+<tr>
+<td>Ventilation</td>
+<td>100 %</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-alert markdown-alert-tip">
+                    <p class="markdown-alert-title">💡 Tip</p>
+<p>En cas de doute, le <strong>PLA</strong> couvre la grande majorité des besoins courants au Fablab.</p>
+</div>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

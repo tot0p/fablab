@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fablab Documentation Portal</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item active">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="hero">
+  <h1>Fablab Documentation Portal</h1>
+  <p>Bienvenue sur le portail de documentation du Fablab. Utilisez le menu de navigation pour explorer nos guides, tutoriels et ressources.</p>
+</div>
+<div class="content-grid">
+  <div class="card">
+    <h3>🖨️ Maintenance</h3>
+    <p>Guides de maintenance et d'entretien pour les équipements du Fablab.</p>
+    <ul>
+      <li><a href="/docs/Maintenance/Imprimante 3D/">Entretien des imprimantes 3D Bambu Lab P1S</a></li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🎓 Tutoriels</h3>
+    <p>Tutoriels pas à pas pour vous aider à démarrer avec la fabrication numérique.</p>
+    <ul>
+      <li><a href="/docs/Tutoriels/Zero To Benchy/">Zero To Benchy - Guide d'impression 3D</a></li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>📚 Documentation Complète</h3>
+    <p>Parcourez toute notre documentation en utilisant le menu de navigation sur la gauche.</p>
+  </div>
+  <div class="card">
+    <h3>🔧 Équipements</h3>
+    <p>Découvrez les outils et équipements disponibles dans notre Fablab.</p>
+    <p><em>Plus de contenu à venir...</em></p>
+  </div>
+</div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

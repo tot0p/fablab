@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribuer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Contribuer</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="lisez-moi-comment-contribuer-à-la-documentation" tabindex="-1"><a class="header-anchor" href="#lisez-moi-comment-contribuer-à-la-documentation">Lisez-moi — Comment contribuer à la documentation</a></h1>
+<p>Ce site est un portail de documentation pour le Fablab. Il est généré automatiquement à partir de fichiers Markdown placés dans le dossier <code>assets/docs/</code>. Vous n’avez pas besoin de toucher au code du site pour ajouter ou modifier une page.</p>
+<p>Le code source du site est disponible sur GitHub : <a href="https://github.com/tot0p/fablab">https://github.com/tot0p/fablab</a></p>
+<hr>
+<h2 id="comment-le-site-fonctionne" tabindex="-1"><a class="header-anchor" href="#comment-le-site-fonctionne">Comment le site fonctionne</a></h2>
+<h3 id="structure-des-fichiers" tabindex="-1"><a class="header-anchor" href="#structure-des-fichiers">Structure des fichiers</a></h3>
+<pre><code>assets/
+└── docs/
+    ├── Tutoriels/
+    │   ├── Mon tutoriel.md      → page /docs/Tutoriels/Mon tutoriel/
+    │   └── Autre tutoriel.md
+    ├── Maintenance/
+    │   └── Imprimante 3D.md
+    └── docs.json                (ne pas modifier)
+</code></pre>
+<ul>
+<li><strong>Chaque dossier</strong> dans <code>assets/docs/</code> devient un menu déroulant dans la barre latérale.</li>
+<li><strong>Chaque fichier <code>.md</code></strong> devient une page du site.</li>
+<li>La navigation est <strong>générée automatiquement</strong> — il suffit de créer le fichier au bon endroit.</li>
+</ul>
+<h3 id="images" tabindex="-1"><a class="header-anchor" href="#images">Images</a></h3>
+<p>Les images doivent être placées dans <code>assets/img/</code>. Elles sont accessibles dans les documents via le chemin <code>/img/nom-du-fichier.jpg</code>.</p>
+<hr>
+<h2 id="ajouter-une-page-de-documentation" tabindex="-1"><a class="header-anchor" href="#ajouter-une-page-de-documentation">Ajouter une page de documentation</a></h2>
+<h3 id="1-créer-le-fichier" tabindex="-1"><a class="header-anchor" href="#1-créer-le-fichier">1. Créer le fichier</a></h3>
+<p>Créez un fichier <code>.md</code> dans le dossier correspondant à la catégorie :</p>
+<pre><code>assets/docs/NomDeLaCategorie/Titre de ma page.md
+</code></pre>
+<p>Si la catégorie n’existe pas encore, créez simplement le dossier — il apparaîtra automatiquement dans la navigation.</p>
+<h3 id="2-ajouter-len-tête-optionnel" tabindex="-1"><a class="header-anchor" href="#2-ajouter-len-tête-optionnel">2. Ajouter l’en-tête (optionnel)</a></h3>
+<p>Au début du fichier, vous pouvez ajouter un bloc YAML pour personnaliser le titre et la description :</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">title: "Mon titre personnalisé"
+description: "Courte description affichée sous le titre"</span>
+<span class="token punctuation">---</span></span></code></pre>
+<p>Si vous omettez cet en-tête, le <strong>nom du fichier</strong> est utilisé comme titre automatiquement.</p>
+<h3 id="3-écrire-le-contenu-en-markdown" tabindex="-1"><a class="header-anchor" href="#3-écrire-le-contenu-en-markdown">3. Écrire le contenu en Markdown</a></h3>
+<p>Voici les éléments disponibles :</p>
+<h4 id="titres" tabindex="-1"><a class="header-anchor" href="#titres">Titres</a></h4>
+<pre class="language-markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> Titre principal (H1)</span>
+<span class="token title important"><span class="token punctuation">##</span> Section (H2)</span>
+<span class="token title important"><span class="token punctuation">###</span> Sous-section (H3)</span>
+<span class="token title important"><span class="token punctuation">####</span> Sous-sous-section (H4)</span></code></pre>
+<p>Chaque titre génère automatiquement une ancre de lien (ex. <code>#titre-principal</code>).</p>
+<h4 id="texte" tabindex="-1"><a class="header-anchor" href="#texte">Texte</a></h4>
+<pre class="language-markdown"><code class="language-markdown">Texte normal.
+
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">Texte en gras</span><span class="token punctuation">**</span></span>
+
+<span class="token italic"><span class="token punctuation">*</span><span class="token content">Texte en italique</span><span class="token punctuation">*</span></span>
+
+<span class="token code-snippet code keyword">`code inline`</span></code></pre>
+<h4 id="listes" tabindex="-1"><a class="header-anchor" href="#listes">Listes</a></h4>
+<pre class="language-markdown"><code class="language-markdown"><span class="token list punctuation">-</span> Élément 1
+<span class="token list punctuation">-</span> Élément 2
+  <span class="token list punctuation">-</span> Sous-élément
+
+<span class="token list punctuation">1.</span> Première étape
+<span class="token list punctuation">2.</span> Deuxième étape
+<span class="token list punctuation">3.</span> Troisième étape</code></pre>
+<h4 id="liste-de-tâches" tabindex="-1"><a class="header-anchor" href="#liste-de-tâches">Liste de tâches</a></h4>
+<pre class="language-markdown"><code class="language-markdown"><span class="token list punctuation">-</span> [x] Étape accomplie
+<span class="token list punctuation">-</span> [ ] Étape à faire
+<span class="token list punctuation">-</span> [ ] Autre étape</code></pre>
+<h4 id="blocs-de-code-avec-coloration-syntaxique" tabindex="-1"><a class="header-anchor" href="#blocs-de-code-avec-coloration-syntaxique">Blocs de code avec coloration syntaxique</a></h4>
+<p>Indiquez le langage après les trois backticks :</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span><span class="token code-language">python</span>
+<span class="token code-block language-python">def hello():
+    print("Bonjour le Fablab !")</span>
+<span class="token punctuation">```</span></span>
+
+<span class="token code"><span class="token punctuation">```</span><span class="token code-language">bash</span>
+<span class="token code-block language-bash">npm run build</span>
+<span class="token punctuation">```</span></span>
+
+<span class="token code"><span class="token punctuation">```</span><span class="token code-language">gcode</span>
+<span class="token code-block language-gcode">G28 ; Homing
+G1 X50 Y50 Z10 F3000</span>
+<span class="token punctuation">```</span></span></code></pre>
+<h4 id="images-1" tabindex="-1"><a class="header-anchor" href="#images-1">Images</a></h4>
+<p>Placez l’image dans <code>assets/img/</code>, puis insérez-la :</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">Description de l'image</span>](<span class="token url">/img/mon-image.jpg</span>)</span></code></pre>
+<h4 id="liens" tabindex="-1"><a class="header-anchor" href="#liens">Liens</a></h4>
+<pre class="language-markdown"><code class="language-markdown"><span class="token url">[<span class="token content">Texte du lien</span>](<span class="token url">https://exemple.com</span>)</span>
+[Lien vers une autre page](/docs/Tutoriels/Mon tutoriel/)</code></pre>
+<h4 id="tableaux" tabindex="-1"><a class="header-anchor" href="#tableaux">Tableaux</a></h4>
+<pre class="language-markdown"><code class="language-markdown"><span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> Colonne 1 </span><span class="token punctuation">|</span><span class="token table-header important"> Colonne 2 </span><span class="token punctuation">|</span><span class="token table-header important"> Colonne 3 </span><span class="token punctuation">|</span>
+</span><span class="token table-line"><span class="token punctuation">|</span><span class="token punctuation">-----------</span><span class="token punctuation">|</span><span class="token punctuation">-----------</span><span class="token punctuation">|</span><span class="token punctuation">-----------</span><span class="token punctuation">|</span>
+</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> Valeur A  </span><span class="token punctuation">|</span><span class="token table-data"> Valeur B  </span><span class="token punctuation">|</span><span class="token table-data"> Valeur C  </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> Valeur D  </span><span class="token punctuation">|</span><span class="token table-data"> Valeur E  </span><span class="token punctuation">|</span><span class="token table-data"> Valeur F  </span><span class="token punctuation">|</span>
+</span></span></code></pre>
+<h4 id="blocs-dalerte" tabindex="-1"><a class="header-anchor" href="#blocs-dalerte">Blocs d’alerte</a></h4>
+<p>Ces encadrés colorés attirent l’attention sur des informations importantes :</p>
+<pre class="language-markdown"><code class="language-markdown">::: NOTE
+Information complémentaire utile.
+:::
+
+::: TIP
+Conseil pratique pour faciliter l'utilisation.
+:::
+
+::: IMPORTANT
+Information à ne pas manquer.
+:::
+
+::: WARNING
+Risque potentiel — à lire avant de continuer.
+:::
+
+::: CAUTION
+Danger ou action irréversible — procéder avec précaution.
+:::</code></pre>
+<hr>
+<h2 id="exemple-de-document-complet" tabindex="-1"><a class="header-anchor" href="#exemple-de-document-complet">Exemple de document complet</a></h2>
+<pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">title: "Calibrer l'imprimante Prusa"
+description: "Guide pas à pas pour calibrer le plateau et le premier calque"</span>
+<span class="token punctuation">---</span></span>
+
+<span class="token title important"><span class="token punctuation">#</span> Calibrer l'imprimante Prusa</span>
+
+Ce guide explique comment calibrer le plateau de l'imprimante Prusa MK4.
+
+<span class="token title important"><span class="token punctuation">##</span> Matériel nécessaire</span>
+
+<span class="token list punctuation">-</span> Une feuille de papier A4
+<span class="token list punctuation">-</span> Accès au menu de l'imprimante
+
+<span class="token title important"><span class="token punctuation">##</span> Étapes</span>
+
+<span class="token title important"><span class="token punctuation">###</span> 1. Accéder au menu de calibration</span>
+
+Sur l'écran de l'imprimante, naviguez vers <span class="token bold"><span class="token punctuation">**</span><span class="token content">Réglages → Calibration → Premier calque</span><span class="token punctuation">**</span></span>.
+
+<span class="token title important"><span class="token punctuation">###</span> 2. Régler la hauteur</span>
+
+::: TIP
+Utilisez la feuille de papier comme guide : la buse doit glisser dessus avec une légère résistance.
+:::
+
+<span class="token list punctuation">1.</span> Lancez la procédure depuis le menu.
+<span class="token list punctuation">2.</span> Ajustez la hauteur avec les boutons +/-.
+<span class="token list punctuation">3.</span> Confirmez quand la résistance est correcte.
+
+::: WARNING
+Ne pas forcer la buse contre le plateau — risque d'endommager la surface PEI.
+:::
+
+<span class="token title important"><span class="token punctuation">###</span> 3. Vérifier le premier calque</span>
+
+Lancez un test d'impression et observez le premier calque :
+
+<span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> Résultat            </span><span class="token punctuation">|</span><span class="token table-header important"> Signification         </span><span class="token punctuation">|</span><span class="token table-header important"> Action                 </span><span class="token punctuation">|</span>
+</span><span class="token table-line"><span class="token punctuation">|</span><span class="token punctuation">---------------------</span><span class="token punctuation">|</span><span class="token punctuation">-----------------------</span><span class="token punctuation">|</span><span class="token punctuation">------------------------</span><span class="token punctuation">|</span>
+</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> Calque plat         </span><span class="token punctuation">|</span><span class="token table-data"> Calibration correcte  </span><span class="token punctuation">|</span><span class="token table-data"> Continuer l'impression </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> Calque qui se décolle </span><span class="token punctuation">|</span><span class="token table-data"> Buse trop haute     </span><span class="token punctuation">|</span><span class="token table-data"> Baisser de 0,05 mm     </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> Lignes écrasées     </span><span class="token punctuation">|</span><span class="token table-data"> Buse trop basse       </span><span class="token punctuation">|</span><span class="token table-data"> Monter de 0,05 mm      </span><span class="token punctuation">|</span>
+</span></span>
+<span class="token url"><span class="token operator">!</span>[<span class="token content">Premier calque correct</span>](<span class="token url">/img/premier-calque.jpg</span>)</span>
+
+<span class="token title important"><span class="token punctuation">##</span> Résultat attendu</span>
+
+<span class="token list punctuation">-</span> [x] Plateau propre et de niveau
+<span class="token list punctuation">-</span> [x] Premier calque adhérent et uniforme
+<span class="token list punctuation">-</span> [ ] Test d'impression complété</code></pre>
+<hr>
+<h2 id="lancer-le-site-en-local" tabindex="-1"><a class="header-anchor" href="#lancer-le-site-en-local">Lancer le site en local</a></h2>
+<p>Pour prévisualiser vos modifications avant de les publier :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Installer les dépendances (une seule fois)</span>
+<span class="token function">npm</span> <span class="token function">install</span>
+
+<span class="token comment"># Lancer le serveur de développement avec rechargement automatique</span>
+<span class="token function">npm</span> run dev</code></pre>
+<p>Le site est alors accessible à l’adresse <a href="http://localhost:8080">http://localhost:8080</a>. Toute modification d’un fichier <code>.md</code> recharge la page automatiquement.</p>
+<p>Pour générer le site statique final :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run build</code></pre>
+<p>Les fichiers générés se trouvent dans le dossier <code>_site/</code>.</p>
+<hr>
+<h2 id="bonnes-pratiques" tabindex="-1"><a class="header-anchor" href="#bonnes-pratiques">Bonnes pratiques</a></h2>
+<ul>
+<li><strong>Nommez les fichiers clairement</strong> : le nom devient le titre si aucun frontmatter n’est présent.</li>
+<li><strong>Rangez les fichiers dans le bon dossier</strong> : la structure des dossiers définit la navigation.</li>
+<li><strong>Utilisez des images compressées</strong> : les fichiers trop lourds ralentissent le site.</li>
+<li><strong>Testez localement</strong> avant de publier, notamment pour vérifier les images et les liens.</li>
+<li><strong>Écrivez en français</strong> pour rester cohérent avec le reste de la documentation.</li>
+</ul>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

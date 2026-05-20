@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametres P1s</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Parametres P1s</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="paramètres-dimpression-bambu-lab-p1s" tabindex="-1"><a class="header-anchor" href="#paramètres-dimpression-bambu-lab-p1s">Paramètres d’impression — Bambu Lab P1S</a></h1>
+<p>Le Fablab dispose de <strong>deux imprimantes Bambu Lab P1S</strong>. Elles s’utilisent avec le logiciel <strong>Bambu Studio</strong> (ou OrcaSlicer). Ce guide présente les réglages à connaître pour obtenir de bonnes impressions en PLA.</p>
+<hr>
+<h2 id="volume-dimpression" tabindex="-1"><a class="header-anchor" href="#volume-dimpression">Volume d’impression</a></h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Largeur (X)</td>
+<td>256 mm</td>
+</tr>
+<tr>
+<td>Profondeur (Y)</td>
+<td>256 mm</td>
+</tr>
+<tr>
+<td>Hauteur (Z)</td>
+<td>256 mm</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="profils-de-qualité" tabindex="-1"><a class="header-anchor" href="#profils-de-qualité">Profils de qualité</a></h2>
+<p>Bambu Studio propose des profils prêts à l’emploi. Voici lesquels choisir selon vos besoins :</p>
+<table>
+<thead>
+<tr>
+<th>Profil</th>
+<th>Hauteur de couche</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extra fine</td>
+<td>0,08 mm</td>
+<td>Détails fins, figurines</td>
+</tr>
+<tr>
+<td>Fine</td>
+<td>0,12 mm</td>
+<td>Bonne qualité, pièces visibles</td>
+</tr>
+<tr>
+<td><strong>Optimal</strong></td>
+<td><strong>0,20 mm</strong></td>
+<td><strong>Équilibre qualité/vitesse — recommandé</strong></td>
+</tr>
+<tr>
+<td>Rapide</td>
+<td>0,28 mm</td>
+<td>Prototypes, pièces fonctionnelles</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="paramètres-pla" tabindex="-1"><a class="header-anchor" href="#paramètres-pla">Paramètres PLA</a></h2>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Température buse</td>
+<td>220 °C</td>
+</tr>
+<tr>
+<td>Température plateau</td>
+<td>35 °C</td>
+</tr>
+<tr>
+<td>Ventilation</td>
+<td>100 %</td>
+</tr>
+<tr>
+<td>Vitesse (recommandée)</td>
+<td>150–200 mm/s</td>
+</tr>
+<tr>
+<td>Remplissage standard</td>
+<td>15 % gyroïde</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="remplissage-infill" tabindex="-1"><a class="header-anchor" href="#remplissage-infill">Remplissage (infill)</a></h2>
+<p>Le remplissage détermine la solidité et le poids de la pièce.</p>
+<table>
+<thead>
+<tr>
+<th>Pourcentage</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5–10 %</td>
+<td>Décoration, maquettes</td>
+</tr>
+<tr>
+<td>15 %</td>
+<td>Pièces standard (valeur par défaut)</td>
+</tr>
+<tr>
+<td>30–40 %</td>
+<td>Pièces mécaniques, sollicitées</td>
+</tr>
+<tr>
+<td>80–100 %</td>
+<td>Pièces très résistantes, poids acceptable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Motif recommandé :</strong> Gyroïde (résistance homogène dans toutes les directions).</p>
+<hr>
+<h2 id="supports" tabindex="-1"><a class="header-anchor" href="#supports">Supports</a></h2>
+<p>Activez les supports si votre modèle a des <strong>surplombs de plus de 45°</strong>.</p>
+<ul>
+<li><strong>Type recommandé :</strong> Supports arborescents (tree supports) — plus faciles à retirer.</li>
+<li><strong>Interface de support :</strong> Activez-la pour décoller les supports plus proprement.</li>
+</ul>
+<div class="markdown-alert markdown-alert-tip">
+                    <p class="markdown-alert-title">💡 Tip</p>
+<p>Dans Bambu Studio, vous pouvez peindre manuellement les zones où ajouter ou exclure des supports. C’est très utile pour les géométries complexes.</p>
+</div>
+<hr>
+<h2 id="adhérence-au-plateau-brim-raft" tabindex="-1"><a class="header-anchor" href="#adhérence-au-plateau-brim-raft">Adhérence au plateau (brim / raft)</a></h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Quand l’utiliser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aucune</td>
+<td>Pièces avec une grande surface de base</td>
+</tr>
+<tr>
+<td><strong>Brim</strong></td>
+<td>Pièces fines, hautes ou avec peu de contact</td>
+</tr>
+<tr>
+<td>Raft</td>
+<td>Petites pièces avec très peu de surface</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="conseils-généraux" tabindex="-1"><a class="header-anchor" href="#conseils-généraux">Conseils généraux</a></h2>
+<ul>
+<li><strong>Orientez votre pièce</strong> pour minimiser les supports et maximiser la résistance dans le sens des couches.</li>
+<li><strong>Vérifiez l’aperçu couche par couche</strong> dans Bambu Studio avant de lancer l’impression.</li>
+<li><strong>Ne touchez pas au plateau</strong> à mains nues — les graisses de la peau réduisent l’adhérence.</li>
+<li>En cas de problème d’adhérence, nettoyez le plateau avec de l’alcool isopropylique.</li>
+</ul>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

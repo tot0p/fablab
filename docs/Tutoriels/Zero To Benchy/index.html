@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero To Benchy</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Zero To Benchy</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="zero-to-benchy-avec-bambu-studio" tabindex="-1"><a class="header-anchor" href="#zero-to-benchy-avec-bambu-studio">Zero to Benchy avec Bambu Studio</a></h1>
+<p>Ce guide t’explique toutes les étapes pour partir de zéro jusqu’a ton premier Benchy imprimé en 3D !</p>
+<p>Dans ce tuto tu verras comment télécharger le logiciel, importer le modèle, choisir les paramètres, envoyer à l’imprimante et enfin récupérer ton bateau fraîchement sorti de l’imprimante.</p>
+<h2 id="sommaire" tabindex="-1"><a class="header-anchor" href="#sommaire">Sommaire</a></h2>
+<ol>
+<li><a href="#1-t%C3%A9l%C3%A9charger-et-installer-bambu-studio">Télécharger et Installer Bambu Studio</a></li>
+<li><a href="#2-t%C3%A9l%C3%A9charger-le-mod%C3%A8le-benchy">Télécharger le Modèle Benchy</a></li>
+<li><a href="#3-importer-le-benchy-dans-bambu-studio">Importer le Benchy dans Bambu Studio</a></li>
+<li><a href="#4-choisir-le-profil-dimprimante-et-le-mat%C3%A9riau">Choisir le profil d’imprimante et le matériau</a></li>
+<li><a href="#5-choisir-un-profil-dimpression">Choisir un Profil d’Impression</a></li>
+<li><a href="#6-les-param%C3%A8tres-ajustables">Les paramètres ajustables</a></li>
+<li><a href="#7-trancher-le-mod%C3%A8le-slicer">Trancher le Modèle (Slicer)</a></li>
+<li><a href="#8-avant-denvoyer-%C3%A0-limprimante">Avant d’Envoyer à l’Imprimante</a></li>
+<li><a href="#9-lancer-limpression">Lancer l’Impression</a></li>
+<li><a href="#10-r%C3%A9cup%C3%A9rer-le-benchy-imprim%C3%A9">Récupérer le Benchy Imprimé</a></li>
+<li><a href="#10-examiner-le-r%C3%A9sultat">Examiner le Résultat</a></li>
+<li><a href="#r%C3%A9sum%C3%A9">Résumé</a></li>
+</ol>
+<hr>
+<h2 id="1-télécharger-et-installer-bambu-studio" tabindex="-1"><a class="header-anchor" href="#1-télécharger-et-installer-bambu-studio">1. Télécharger et Installer Bambu Studio</a></h2>
+<ol>
+<li>Va sur la page officielle : <a href="https://bambulab.com/en/download/studio">https://bambulab.com/en/download/studio</a></li>
+<li>Télécharge la version correspondant à ton système (Windows, macOS ou Linux).<br>
+<img src="/img/bambu-studio-download.png" alt="page de téléchargement de Bambu Studio"></li>
+<li>Installe puis lance Bambu Studio.</li>
+</ol>
+<hr>
+<h2 id="2-télécharger-le-modèle-benchy" tabindex="-1"><a class="header-anchor" href="#2-télécharger-le-modèle-benchy">2. Télécharger le Modèle Benchy</a></h2>
+<ol>
+<li>Récupère le fichier STL du Benchy ici :<br>
+<a href="https://cults3d.com/en/3d-model/tool/3dbenchy-the-jolly-3d-printing-torture-test">https://cults3d.com/en/3d-model/tool/3dbenchy-the-jolly-3d-printing-torture-test</a></li>
+<li>Enregistre le fichier sur ton ordinateur.<br>
+<img src="/img/download-benchy-stl.png" alt="téléchargement du fichier STL du Benchy"></li>
+</ol>
+<hr>
+<h2 id="3-importer-le-benchy-dans-bambu-studio" tabindex="-1"><a class="header-anchor" href="#3-importer-le-benchy-dans-bambu-studio">3. Importer le Benchy dans Bambu Studio</a></h2>
+<ol>
+<li>Dans Bambu Studio, fais <strong>Fichier → Importer</strong> ou glisser-déposer le STL dans la zone de travail.</li>
+<li>Le Benchy apparaît sur le plateau virtuel.<br>
+<img src="/img/import-benchy-stl.png" alt="importation du fichier STL dans Bambu Studio"></li>
+</ol>
+<hr>
+<h2 id="4-choisir-le-profil-dimprimante-et-le-matériau" tabindex="-1"><a class="header-anchor" href="#4-choisir-le-profil-dimprimante-et-le-matériau">4. Choisir le profil d’imprimante et le matériau</a></h2>
+<ol>
+<li>Vérifie que le bon modèle d’imprimante est sélectionné dans le coin supérieur droit.<br>
+<img src="/img/menu-imprimante.png" alt="menu imprimante"></li>
+<li>Choisis le filament PLA Basic.<br>
+<img src="/img/selection-filament.png" alt="panneau de sélection du filament"></li>
+</ol>
+<hr>
+<h2 id="5-choisir-un-profil-dimpression" tabindex="-1"><a class="header-anchor" href="#5-choisir-un-profil-dimpression">5. Choisir un Profil d’Impression</a></h2>
+<ol>
+<li>Sur la gauche dans le menu déroulant <strong>Traiter</strong>, choisis un profil prédéfini, par exemple :
+<ul>
+<li><strong>0.20 mm Standard</strong></li>
+<li><strong>0.16 mm Qualité</strong></li>
+<li><strong>0.28 mm Rapide</strong><br>
+<img src="/img/selection-profil-impression.png" alt="sélection du profil d'impression"></li>
+</ul>
+</li>
+</ol>
+<p>Nous imprimerons le Benchy avec le profil <strong>0.2 mm Standard</strong> pour un bon équilibre entre qualité et vitesse.</p>
+<hr>
+<h2 id="6-les-paramètres-ajustables" tabindex="-1"><a class="header-anchor" href="#6-les-paramètres-ajustables">6. Les paramètres ajustables</a></h2>
+<p>Tu peux modifier :</p>
+<ul>
+<li>Hauteur de couche  (pas nécessaire pour ce tuto)</li>
+<li>Remplissage (infill) et densité de remplissage (à modifier à 10% pour le Benchy)</li>
+<li>Supports (le Benchy classique s’imprime <em>sans</em> supports)</li>
+</ul>
+<p>Pour débuter et utiliser l’imprimante de manière optimale dans le futur, il est recommandé d’utiliser les profils d’impression prédéfinis sans modifications supplémentaires sauf indication contraire ou besoin spécifique.</p>
+<hr>
+<h2 id="7-trancher-le-modèle-slicer" tabindex="-1"><a class="header-anchor" href="#7-trancher-le-modèle-slicer">7. Trancher le Modèle (Slicer)</a></h2>
+<ol>
+<li>Clique sur <strong>Trancher le plateau / Slice Plate</strong>.</li>
+<li>Bambu Studio génère un aperçu du trajet d’impression.<br>
+<img src="/img/preview-slicing-layers.png" alt="aperçu du tranchage avec les couches visibles"></li>
+<li>Vérifie :
+<ul>
+<li>Que le temps estimé est raisonnable (environ 37 à 40 minutes pour le Benchy avec ce profil)</li>
+<li>Que la quantité de filament utilisée est correcte (environ 11-15g pour le Benchy)</li>
+</ul>
+</li>
+</ol>
+<p>Il est important de vérifier ces informations pour s’assurer que tout est en ordre avant l’impression.</p>
+<p>Il est souhaitable de ne pas utiliser plus de filament qu’il n’est raisonnable de même pour le temps d’impression pour les projets futurs.</p>
+<hr>
+<h2 id="8-avant-denvoyer-à-limprimante" tabindex="-1"><a class="header-anchor" href="#8-avant-denvoyer-à-limprimante">8. Avant d’Envoyer à l’Imprimante</a></h2>
+<p>Pour envoyer le modèle à l’imprimante deux options s’offrent à toi :</p>
+<ol>
+<li>Envoyer le fichier a ton chef de projet pour qu’il le valide et l’envoie lui meme à l’imprimante. Et dans ce cas passe à l’étape 10.</li>
+<li>Demande a ton chef de projet de te connecter au compte Bambu Cloud du fablab pour que tu puisses envoyer toi meme le fichier à l’imprimante. Et dans ce cas continue à l’étape 9.</li>
+</ol>
+<h2 id="9-lancer-limpression" tabindex="-1"><a class="header-anchor" href="#9-lancer-limpression">9. Lancer l’Impression</a></h2>
+<p>Depuis Bambu Studio choisis “Imprimer Plateau” et selectionne l’imprimante sur laquelle tu veux lancer l’impression.<br>
+Avant de lancer l’impression, assure-toi que :</p>
+<ul>
+<li>Le bon plateau est sélectionné</li>
+<li>Le bon filament est chargé dans l’imprimante et utilisé pour l’impression<br>
+<img src="/img/send-print.png" alt="lancement de l'impression"><br>
+Clique sur <strong>Envoyer / Print</strong> pour démarrer l’impression.</li>
+</ul>
+<p>L’imprimante effectuera les étapes de préchauffage et de calibration avant de commencer l’impression.</p>
+<hr>
+<p><img src="/img/timelapse.gif" alt="timelapse"></p>
+<hr>
+<h2 id="10-récupérer-le-benchy-imprimé" tabindex="-1"><a class="header-anchor" href="#10-récupérer-le-benchy-imprimé">10. Récupérer le Benchy Imprimé</a></h2>
+<ol>
+<li>Attends que le plateau refroidisse complètement.</li>
+<li>Retire délicatement le Benchy.<br>
+<img src="/img/benchy-plateau.jpg" alt="récupération du Benchy imprimé"></li>
+<li>Si nécessaire, enlève les éventuels résidus de filament avec la spatule verte</li>
+</ol>
+<hr>
+<h2 id="10-examiner-le-résultat" tabindex="-1"><a class="header-anchor" href="#10-examiner-le-résultat">10. Examiner le Résultat</a></h2>
+<p>Observe :</p>
+<ul>
+<li>Les surplombs</li>
+<li>Les ponts (bridging)</li>
+<li>La surface</li>
+<li>L’alignement de la cheminée</li>
+<li>La lisibilité du texte sous et derrière la coque</li>
+</ul>
+<p>Tu peux observer les détails et vérifier la qualité de l’impression.<br>
+Le Benchy est un modèle sympathique et utile pour évaluer les performances de l’imprimante 3D, elle permet de tester plusieurs aspects techniques de l’imprimante.</p>
+<p><img src="/img/benchy-gros-plan.jpg" alt="Gros plan du Benchy imprimé"></p>
+<hr>
+<h1 id="résumé" tabindex="-1"><a class="header-anchor" href="#résumé">Résumé</a></h1>
+<p>Tu viens de voir l’ensemble du parcours :</p>
+<ul>
+<li>Installer Bambu Studio</li>
+<li>Importer et préparer un modèle</li>
+<li>Choisir les paramètres</li>
+<li>Envoyer et lancer l’impression</li>
+<li>Récupérer et analyser ton Benchy</li>
+</ul>
+<p>C’est le chemin classique pour n’importe quel futur projet d’impression 3D.</p>
+<p>Certains ajustements seront nécessaires selon les modèles et matériaux, mais tu as maintenant une bonne base pour commencer ! Bonne impression !</p>
+<p><img src="/img/benchy-finit.jpg" alt="Final Benchy"></p>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

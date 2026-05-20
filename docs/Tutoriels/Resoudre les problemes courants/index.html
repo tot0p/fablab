@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoudre Les Problemes Courants</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Resoudre Les Problemes Courants</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="résoudre-les-problèmes-courants-dimpression-3d" tabindex="-1"><a class="header-anchor" href="#résoudre-les-problèmes-courants-dimpression-3d">Résoudre les problèmes courants d’impression 3D</a></h1>
+<p>Ce guide recense les problèmes les plus fréquemment rencontrés sur nos Bambu Lab P1S, avec leurs causes et solutions.</p>
+<hr>
+<h2 id="la-pièce-ne-colle-pas-au-plateau" tabindex="-1"><a class="header-anchor" href="#la-pièce-ne-colle-pas-au-plateau">La pièce ne colle pas au plateau</a></h2>
+<p><strong>Symptômes :</strong> La pièce se détache en cours d’impression, les premiers calques ne tiennent pas, la buse pousse la pièce.</p>
+<p><strong>Causes et solutions :</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plateau sale</td>
+<td>Nettoyer avec de l’alcool isopropylique et un chiffon microfibre</td>
+</tr>
+<tr>
+<td>Plateau touché à mains nues</td>
+<td>Toujours manipuler le plateau par les bords</td>
+</tr>
+<tr>
+<td>Buse trop haute</td>
+<td>Relancer la calibration du Z offset dans Bambu Studio</td>
+</tr>
+<tr>
+<td>Température de plateau trop basse</td>
+<td>Augmenter de 5 °C</td>
+</tr>
+<tr>
+<td>Pièce avec peu de surface de contact</td>
+<td>Activer un brim dans le slicer</td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-alert markdown-alert-tip">
+                    <p class="markdown-alert-title">💡 Tip</p>
+<p>Un plateau propre suffit généralement pour le PLA. En cas de problème persistant, appliquez une fine couche de laque fixatif ou de bâton de colle.</p>
+</div>
+<hr>
+<h2 id="warping-les-coins-se-soulèvent" tabindex="-1"><a class="header-anchor" href="#warping-les-coins-se-soulèvent">Warping — les coins se soulèvent</a></h2>
+<p><strong>Symptômes :</strong> Les bords ou les coins de la pièce se décollent du plateau pendant l’impression, la pièce se courbe.</p>
+<p><strong>Causes :</strong> Le plastique se rétracte en refroidissant trop vite.</p>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Augmenter la température du plateau (+5 à +10 °C)</li>
+<li>Activer un <strong>brim</strong> (jupe de 5–10 mm) pour ancrer les bords</li>
+<li>Positionner la pièce au centre du plateau</li>
+</ul>
+<hr>
+<h2 id="stringing-des-fils-entre-les-parois" tabindex="-1"><a class="header-anchor" href="#stringing-des-fils-entre-les-parois">Stringing — des fils entre les parois</a></h2>
+<p><strong>Symptômes :</strong> Des fils plastiques fins apparaissent entre les différentes parties de la pièce, comme une toile d’araignée.</p>
+<p><strong>Causes :</strong> Le filament continue de suinter pendant les déplacements sans extrusion (rétraction insuffisante).</p>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Activer ou augmenter la <strong>rétraction</strong> dans les paramètres</li>
+<li>Réduire la température de buse de 5 °C</li>
+<li>Activer l’option <strong>Wipe on retract</strong> dans Bambu Studio</li>
+</ul>
+<div class="markdown-alert markdown-alert-tip">
+                    <p class="markdown-alert-title">💡 Tip</p>
+<p>Le stringing résiduel peut être retiré avec un briquet ou un décapeur thermique (passage rapide à distance). À faire avec précaution.</p>
+</div>
+<hr>
+<h2 id="sous-extrusion-manque-de-matière" tabindex="-1"><a class="header-anchor" href="#sous-extrusion-manque-de-matière">Sous-extrusion — manque de matière</a></h2>
+<p><strong>Symptômes :</strong> Des trous ou lacunes apparaissent dans les parois, les couches ne sont pas pleines, la surface est irrégulière.</p>
+<p><strong>Causes :</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buse partiellement bouchée</td>
+<td>Lancer un nettoyage à chaud (cold pull)</td>
+</tr>
+<tr>
+<td>Filament emmêlé ou cassé dans la bobine</td>
+<td>Vérifier et dérouler le filament</td>
+</tr>
+<tr>
+<td>Vitesse d’impression trop élevée</td>
+<td>Réduire la vitesse de 20–30 %</td>
+</tr>
+<tr>
+<td>Température de buse trop basse</td>
+<td>Augmenter de 5 °C</td>
+</tr>
+<tr>
+<td>Filament humide</td>
+<td>Sécher le filament (voir section dédiée)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="sur-extrusion-trop-de-matière" tabindex="-1"><a class="header-anchor" href="#sur-extrusion-trop-de-matière">Sur-extrusion — trop de matière</a></h2>
+<p><strong>Symptômes :</strong> Les couches débordent, la surface supérieure est bombée ou irrégulière, des boursouflures apparaissent.</p>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Réduire le <strong>multiplicateur d’extrusion</strong> (flow rate) de 5 % dans les paramètres</li>
+<li>Vérifier que le diamètre du filament correspond bien à 1,75 mm</li>
+<li>Calibrer le flux avec un cube de test</li>
+</ul>
+<hr>
+<h2 id="buse-bouchée" tabindex="-1"><a class="header-anchor" href="#buse-bouchée">Buse bouchée</a></h2>
+<p><strong>Symptômes :</strong> Aucun filament ne sort, l’extrudeur fait un bruit de claquement, la tête se déplace sans extruder.</p>
+<p><strong>Procédure de débouchage :</strong></p>
+<ol>
+<li>Chauffer la buse à 250 °C depuis le menu de l’imprimante.</li>
+<li>Extruder manuellement depuis le menu — si le filament sort, la buse n’est pas complètement bouchée.</li>
+<li>Si rien ne sort, tenter un <strong>cold pull</strong> :
+<ul>
+<li>Chauffer à 250 °C, insérer du filament à la main.</li>
+<li>Laisser refroidir à 90 °C.</li>
+<li>Tirer fermement sur le filament d’un coup sec.</li>
+<li>Répéter jusqu’à ce que le filament ressorte propre.</li>
+</ul>
+</li>
+</ol>
+<div class="markdown-alert markdown-alert-caution">
+                    <p class="markdown-alert-title">🚫 Caution</p>
+<p>Ne jamais utiliser d’aiguille métallique pour déboucher sans avoir chauffé la buse au préalable — risque d’endommager le revêtement intérieur.</p>
+</div>
+<hr>
+<h2 id="couches-mal-soudées-délaminage" tabindex="-1"><a class="header-anchor" href="#couches-mal-soudées-délaminage">Couches mal soudées / délaminage</a></h2>
+<p><strong>Symptômes :</strong> La pièce se sépare en couches horizontales, elle est fragile et casse facilement.</p>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Augmenter la température de buse de 5–10 °C</li>
+<li>Réduire la vitesse d’impression</li>
+<li>Contrôler que le filament n’est pas humide</li>
+</ul>
+<hr>
+<h2 id="filament-humide" tabindex="-1"><a class="header-anchor" href="#filament-humide">Filament humide</a></h2>
+<p>L’humidité dégrade les filaments et cause de nombreux problèmes (bulles, stringing, sous-extrusion, mauvaise adhérence).</p>
+<p><strong>Symptômes :</strong> Craquements et sifflements à la sortie de la buse, surface rugueuse, fils excessifs, couleur terne.</p>
+<p><strong>Solution :</strong> Sécher le filament dans un séchoir à filament ou un four à 45–50 °C pendant 4 à 8 heures.</p>
+<div class="markdown-alert markdown-alert-tip">
+                    <p class="markdown-alert-title">💡 Tip</p>
+<p>Stockez vos bobines dans des sacs zip hermétiques avec des sachets de silice (dessicant) quand elles ne sont pas utilisées.</p>
+</div>
+<hr>
+<h2 id="problèmes-de-première-couche" tabindex="-1"><a class="header-anchor" href="#problèmes-de-première-couche">Problèmes de première couche</a></h2>
+<p><strong>La première couche est cruciale.</strong> Voici les défauts fréquents :</p>
+<table>
+<thead>
+<tr>
+<th>Apparence</th>
+<th>Problème</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Couche transparente, filament qui ne tient pas</td>
+<td>Buse trop haute</td>
+<td>Baisser le Z offset</td>
+</tr>
+<tr>
+<td>Couche écrasée, buse qui racle</td>
+<td>Buse trop basse</td>
+<td>Monter le Z offset</td>
+</tr>
+<tr>
+<td>Lignes qui ne se touchent pas</td>
+<td>Flux trop faible ou vitesse trop élevée</td>
+<td>Augmenter le flux ou réduire la vitesse</td>
+</tr>
+<tr>
+<td>Couche irrégulière par zones</td>
+<td>Plateau pas de niveau</td>
+<td>Relancer la calibration automatique</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="limpression-sarrête-au-milieu" tabindex="-1"><a class="header-anchor" href="#limpression-sarrête-au-milieu">L’impression s’arrête au milieu</a></h2>
+<p><strong>Causes possibles :</strong></p>
+<ul>
+<li><strong>Filament cassé ou épuisé</strong> → le P1S détecte la rupture et met en pause automatiquement. Recharger et reprendre.</li>
+<li><strong>Erreur AMS</strong> → vérifier que la bobine n’est pas emmêlée dans l’AMS.</li>
+<li><strong>Surchauffe</strong> → laisser refroidir l’imprimante quelques minutes.</li>
+<li><strong>Perte de réseau</strong> → pour les impressions pilotées via l’application, vérifier la connexion Wi-Fi.</li>
+</ul>
+<hr>
+<h2 id="récapitulatif-rapide" tabindex="-1"><a class="header-anchor" href="#récapitulatif-rapide">Récapitulatif rapide</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Premier réflexe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rien n’adhère</td>
+<td>Nettoyer le plateau à l’alcool</td>
+</tr>
+<tr>
+<td>Warping</td>
+<td>Brim + augmenter température plateau</td>
+</tr>
+<tr>
+<td>Fils entre les parois</td>
+<td>Augmenter la rétraction, baisser la température</td>
+</tr>
+<tr>
+<td>Trous dans les parois</td>
+<td>Augmenter la température, réduire la vitesse</td>
+</tr>
+<tr>
+<td>Buse bouchée</td>
+<td>Cold pull à 250 °C puis 90 °C</td>
+</tr>
+<tr>
+<td>Surface rugueuse</td>
+<td>Sécher le filament</td>
+</tr>
+<tr>
+<td>Couches qui se décollent</td>
+<td>Augmenter la température buse</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimante 3d</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <h2>🔬 Fablab Docs</h2>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="theme-icon theme-icon-light">☀️</span>
+                    <span class="theme-icon theme-icon-dark">🌙</span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher dans les docs..." aria-label="Search documentation">
+                    <span class="search-icon">🔍</span>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Home Link -->
+                <a href="/" class="nav-item ">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                
+                <!-- Dynamic Navigation -->
+                
+                    <div class="nav-section">
+                        <h3 class="nav-section-title">Documentation</h3>
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Maintenance
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Maintenance/Imprimante 3D/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Imprimante 3d
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Maintenance/raspap_raspberrypi/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Raspap Raspberrypi
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <div class="nav-dropdown">
+                                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                                        <span class="nav-icon">📁</span>
+                                        Tutoriels
+                                        <span class="dropdown-arrow">▶</span>
+                                    </button>
+                                    <div class="nav-dropdown-content">
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/arrosage_automatique/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Arrosage Automatique
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Les filaments/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Les Filaments
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Parametres P1S/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Parametres P1s
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Resoudre les problemes courants/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Resoudre Les Problemes Courants
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Verifier vos impressions/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Verifier Vos Impressions
+                                                </a>
+                                            
+                                        
+                                            
+                                                <a href="/docs/Tutoriels/Zero To Benchy/" class="nav-item">
+                                                    <span class="nav-icon">📄</span>
+                                                    Zero To Benchy
+                                                </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            
+                        
+                            
+                                <a href="/docs/Contribuer/" class="nav-item">
+                                    <span class="nav-icon">📄</span>
+                                    Contribuer
+                                </a>
+                            
+                        
+                    </div>
+                
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+<article class="documentation">
+    <header class="doc-header">
+        <h1>Imprimante 3d</h1>
+        
+    </header>
+    
+    <div class="doc-content">
+        <h1 id="entretien-régulier-et-maintenance-préventive-des-imprimantes-3d-bambu-lab-p1s" tabindex="-1"><a class="header-anchor" href="#entretien-régulier-et-maintenance-préventive-des-imprimantes-3d-bambu-lab-p1s">Entretien régulier et maintenance préventive des imprimantes 3D Bambu Lab P1S</a></h1>
+<h2 id="sommaire" tabindex="-1"><a class="header-anchor" href="#sommaire">Sommaire</a></h2>
+<ol>
+<li><a href="#entretien-r%C3%A9gulier-et-maintenance-pr%C3%A9ventive-des-imprimantes-3d-bambu-lab-p1s">Entretien régulier et maintenance préventive</a>
+<ul>
+<li><a href="#apr%C3%A8s-chaque-impression-(ou-en-fin-de-session-dutilisation)">Après chaque impression</a></li>
+<li><a href="#2-toutes-les-50-%C3%A0-100-heures-dimpression-(ou-chaque-semaine-dusage-r%C3%A9gulier)">Toutes les 50 à 100 heures</a></li>
+<li><a href="#3-toutes-les-250-heures-dimpression-(ou-tous-les-1-%C3%A0-2-mois)">Toutes les 250 heures</a></li>
+<li><a href="#4-toutes-les-500-%C3%A0-1000-heures-dimpression-(ou-tous-les-3-%C3%A0-6-mois)">Toutes les 500 à 1000 heures</a></li>
+<li><a href="#5-toutes-les-1000-%C3%A0-2000-heures-dimpression-(ou-tous-les-12-mois)">Toutes les 1000 à 2000 heures</a></li>
+<li><a href="#6-entretien-annuel-(ou-stockage-prolong%C3%A9)">Entretien annuel</a></li>
+</ul>
+</li>
+<li><a href="#diagnostics-des-pannes">Diagnostics des pannes</a>
+<ul>
+<li><a href="#1-d%C3%A9faut-dextrusion">Défaut d’extrusion</a></li>
+<li><a href="#2-d%C3%A9faut-dadh%C3%A9rence">Défaut d’adhérence</a></li>
+<li><a href="#3-diagnostique-des-vibrations">Diagnostique des vibrations</a></li>
+<li><a href="#4-diagnostic-des-erreurs-dimpression">Diagnostic des erreurs d’impression</a></li>
+<li><a href="#5-d%C3%A9faut-dalimentation-ou-probl%C3%A8me-majeur">Défaut d’alimentation</a></li>
+</ul>
+</li>
+<li><a href="#base-de-connaissances">Base de connaissances</a>
+<ul>
+<li><a href="#nettoyage-du-plateau-dimpression">Nettoyage du plateau d’impression</a></li>
+<li><a href="#nettoyage-de-la-chambre-dimpression">Nettoyage de la chambre d’impression</a></li>
+<li><a href="#nettoyage-de-la-t%C3%AAte-dimpression-et-de-la-buse">Nettoyage de la tête d’impression et de la buse</a></li>
+<li><a href="#nettoyage-des-axes-et-lubrification">Nettoyage des axes et lubrification</a></li>
+<li><a href="#lubrification-des-galets-tendeur-de-courroie">Lubrification des galets tendeur de courroie</a></li>
+</ul>
+</li>
+</ol>
+<hr>
+<div class="markdown-alert markdown-alert-caution">
+                    <p class="markdown-alert-title">🚫 Caution</p>
+<p>Avant d’effectuer toute opération d’entretient ou de maintenance, assurez-vous que l’imprimante est hors tension, débranchée et refroidie pour éviter tout risque de choc électrique ou de brûlure.</p>
+</div>
+<h2 id="après-chaque-impression-ou-en-fin-de-session-dutilisation" tabindex="-1"><a class="header-anchor" href="#après-chaque-impression-ou-en-fin-de-session-dutilisation">Après chaque impression (ou en fin de session d’utilisation)</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Fiche associée</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nettoyage du plateau</strong></td>
+<td><a href="#nettoyage-du-plateau-dimpression">Nettoyage du plateau</a> (nettoyage superficiel)</td>
+</tr>
+<tr>
+<td><strong>Vérification visuelle générale</strong></td>
+<td>Rechercher traces de filament fondu, fuites ou objets coincés dans la chambre.</td>
+</tr>
+<tr>
+<td><strong>Nettoyage de la buse (à chaud)</strong></td>
+<td>Si dépôt visible : passer un nettoyage rapide.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-toutes-les-50-à-100-heures-dimpression-ou-chaque-semaine-dusage-régulier" tabindex="-1"><a class="header-anchor" href="#2-toutes-les-50-à-100-heures-dimpression-ou-chaque-semaine-dusage-régulier">2. Toutes les <strong>50 à 100 heures d’impression</strong> (ou chaque semaine d’usage régulier)</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Détail / Objectif</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nettoyage des tiges et axes linéaires</strong></td>
+<td>Enlever poussière et débris avec chiffon doux sec.</td>
+</tr>
+<tr>
+<td><strong>Lubrification légère des axes</strong></td>
+<td>Appliquer huile ou graisse adaptée (PTFE ou silicone), surtout sur Z.</td>
+</tr>
+<tr>
+<td><strong>Vérification des courroies</strong></td>
+<td>Contrôler tension, alignement et état des dents. Resserrer si nécessaire.</td>
+</tr>
+<tr>
+<td><strong>Contrôle du ventilateur</strong></td>
+<td>Vérifier qu’aucun filament ou poussière n’obstrue les pales.</td>
+</tr>
+<tr>
+<td><strong>Calibration du nivellement du plateau</strong></td>
+<td>Relancer la procédure automatique via le menu pour assurer une première couche homogène.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-toutes-les-250-heures-dimpression-ou-tous-les-1-à-2-mois" tabindex="-1"><a class="header-anchor" href="#3-toutes-les-250-heures-dimpression-ou-tous-les-1-à-2-mois">3. Toutes les <strong>250 heures d’impression</strong> (ou tous les 1 à 2 mois)</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Détail / Objectif</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nettoyage approfondi du hotend</strong></td>
+<td>Vérifier le tube PTFE interne, démonter la buse si nécessaire.</td>
+</tr>
+<tr>
+<td><strong>Nettoyage du détecteur de filament (AMS)</strong></td>
+<td>Retirer poussière ou fragments pouvant fausser la détection.</td>
+</tr>
+<tr>
+<td><strong>Contrôle du plateau d’impression</strong></td>
+<td>Examiner la feuille ou surface amovible, remplacer si rayures profondes.</td>
+</tr>
+<tr>
+<td><strong>Vérification du capteur Lidar (si activé)</strong></td>
+<td>Nettoyer la lentille délicatement à l’aide d’un chiffon microfibre sec.</td>
+</tr>
+<tr>
+<td><strong>Contrôle du câblage interne visible</strong></td>
+<td>Vérifier qu’aucun fil n’est pincé ou usé par frottement.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-toutes-les-500-à-1000-heures-dimpression-ou-tous-les-3-à-6-mois" tabindex="-1"><a class="header-anchor" href="#4-toutes-les-500-à-1000-heures-dimpression-ou-tous-les-3-à-6-mois">4. Toutes les <strong>500 à 1000 heures d’impression</strong> (ou tous les 3 à 6 mois)</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Détail / Objectif</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Remplacement de la buse (nozzle)</strong></td>
+<td>Une buse usée dégrade la précision et favorise les bouchons.</td>
+</tr>
+<tr>
+<td><strong>Remplacement des tubes PTFE</strong></td>
+<td>Prévenir toute obstruction ou fuite interne.</td>
+</tr>
+<tr>
+<td><strong>Vérification complète des axes et roulements</strong></td>
+<td>S’assurer qu’ils ne présentent pas de jeu ou de points durs.</td>
+</tr>
+<tr>
+<td><strong>Nettoyage et lubrification des vis Z</strong></td>
+<td>Application d’une fine couche de graisse mécanique légère.</td>
+</tr>
+<tr>
+<td><strong>Inspection du boîtier AMS</strong></td>
+<td>Vérifier la rotation des roues d’entraînement et le chemin du filament.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-toutes-les-1000-à-2000-heures-dimpression-ou-tous-les-12-mois" tabindex="-1"><a class="header-anchor" href="#5-toutes-les-1000-à-2000-heures-dimpression-ou-tous-les-12-mois">5. Toutes les <strong>1000 à 2000 heures d’impression</strong> (ou tous les 12 mois)</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Détail / Objectif</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vérification du bloc d’extrusion complet</strong></td>
+<td>Démontage, nettoyage et inspection de l’engrenage. Remplacer si usé.</td>
+</tr>
+<tr>
+<td><strong>Nettoyage interne complet</strong></td>
+<td>Enlever toute accumulation de poussière, filament fondu, insectes (si, si, ça arrive).</td>
+</tr>
+<tr>
+<td><strong>Remplacement préventif de certains ventilateurs</strong></td>
+<td>Ceux du hotend ou du boîtier peuvent s’encrasser avec le temps.</td>
+</tr>
+<tr>
+<td><strong>Vérification des câbles de thermistance et cartouche chauffante</strong></td>
+<td>Inspecter pour détection d’usure ou de fissure dans la gaine.</td>
+</tr>
+<tr>
+<td><strong>Contrôle de la carte mère et connecteurs</strong></td>
+<td>Vérifier absence de corrosion ou d’oxydation (humidité ambiante).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-entretien-annuel-ou-stockage-prolongé" tabindex="-1"><a class="header-anchor" href="#6-entretien-annuel-ou-stockage-prolongé">6. Entretien annuel (ou stockage prolongé)</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Détail / Objectif</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Calibration générale complète</strong></td>
+<td>Refaire tous les tests (axes, Lidar, extrusion, nivellement).</td>
+</tr>
+<tr>
+<td><strong>Mise à jour du firmware</strong></td>
+<td>Installer les dernières versions via Bambu Studio pour corriger bugs et optimiser la précision.</td>
+</tr>
+<tr>
+<td><strong>Vérification électrique</strong></td>
+<td>Contrôler câble d’alimentation, fusible et connecteurs.</td>
+</tr>
+<tr>
+<td><strong>Stockage des filaments</strong></td>
+<td>Conserver les bobines dans un conteneur hermétique avec dessiccant.</td>
+</tr>
+<tr>
+<td><strong>Nettoyage du caisson et filtre à air (si équipé)</strong></td>
+<td>Dépoussiérage du ventilateur principal et remplacement du filtre HEPA/charbon.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="résumé-rapide-entretien-préventif" tabindex="-1"><a class="header-anchor" href="#résumé-rapide-entretien-préventif">Résumé rapide – entretien préventif</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Fréquence</strong></th>
+<th><strong>Tâche clé</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Après chaque print</td>
+<td>Nettoyage du plateau, buse, chambre</td>
+</tr>
+<tr>
+<td>100 h</td>
+<td>Lubrification, tension des courroies</td>
+</tr>
+<tr>
+<td>250 h</td>
+<td>Nettoyage hotend et capteurs</td>
+</tr>
+<tr>
+<td>500-1000 h</td>
+<td>Remplacement buse, PTFE</td>
+</tr>
+<tr>
+<td>1000-2000 h</td>
+<td>Révision mécanique complète</td>
+</tr>
+<tr>
+<td>Annuel</td>
+<td>Calibration complète + mise à jour firmware</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Souhaites-tu que je te le reformate dans le <strong>style Markdown Bambu Lab (avec titres, encadrés et pictogrammes de sécurité)</strong> pour intégration directe à ton manuel ?<br>
+Je peux aussi y ajouter une <strong>colonne “Produit recommandé”</strong> (ex. type de lubrifiant, chiffon, buse compatible, etc.) pour rendre la section plus opérationnelle.</p>
+<h1 id="diagnostics-des-pannes" tabindex="-1"><a class="header-anchor" href="#diagnostics-des-pannes">Diagnostics des pannes</a></h1>
+<h2 id="problèmes-courants" tabindex="-1"><a class="header-anchor" href="#problèmes-courants">Problèmes courants</a></h2>
+<p>Ci dessous sont lister les problèmes courants qui peuvent survenir lors de l’utilisation de la Bambu Lab P1S</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>Symptome remarquée</strong></th>
+<th><strong>Guide de maintenance associé</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Extrusion partielle ou bloquée</td>
+<td><a href="#1-d%C3%A9faut-dextrusion">Défaut d’extrusion</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Mauvaise adhérence de la première couche ou décollement de l’impression</td>
+<td><a href="#2-d%C3%A9faut-dadh%C3%A9rence">Défaut d’adhérence</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Bruits ou vibrations inhabituels</td>
+<td><a href="#3-diagnostique-des-vibrations">Diagnostique des vibrations</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Détails flou, surface irrégulière ou affaissement  de l’impression</td>
+<td><a href="#4-diagnostic-des-erreurs-dimpression">Diagnostic des erreurs d’impression</a></td>
+</tr>
+<tr>
+<td style="text-align:center">L’imprimante ne s’allume pas ou écran noir</td>
+<td><a href="#5-defaut-dalimentation-ou-probleme-majeur">Défaut d’alimentation ou problème majeur</a></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-alert markdown-alert-caution">
+                    <p class="markdown-alert-title">🚫 Caution</p>
+<p>Sauf indication contraire, avant d’effectuer toute opération de maintenance, assurez-vous que l’imprimante est hors tension, débranchée et refroidie pour éviter tout risque de choc électrique ou de brûlure.</p>
+</div>
+<h1 id="guides-de-maintenance-détaillés" tabindex="-1"><a class="header-anchor" href="#guides-de-maintenance-détaillés">Guides de maintenance détaillés</a></h1>
+<h2 id="1-défaut-dextrusion" tabindex="-1"><a class="header-anchor" href="#1-défaut-dextrusion">1. Défaut d’extrusion</a></h2>
+<h2 id="2-défaut-dadhérence" tabindex="-1"><a class="header-anchor" href="#2-défaut-dadhérence">2. Défaut d’adhérence</a></h2>
+<h2 id="3-diagnostique-des-vibrations" tabindex="-1"><a class="header-anchor" href="#3-diagnostique-des-vibrations">3. Diagnostique des vibrations</a></h2>
+<h2 id="4-diagnostic-des-erreurs-dimpression" tabindex="-1"><a class="header-anchor" href="#4-diagnostic-des-erreurs-dimpression">4. Diagnostic des erreurs d’impression</a></h2>
+<h2 id="5-défaut-dalimentation-ou-problème-majeur" tabindex="-1"><a class="header-anchor" href="#5-défaut-dalimentation-ou-problème-majeur">5. Défaut d’alimentation ou problème majeur</a></h2>
+<h1 id="base-de-connaissances" tabindex="-1"><a class="header-anchor" href="#base-de-connaissances">Base de connaissances</a></h1>
+<h2 id="nettoyage-du-plateau-dimpression" tabindex="-1"><a class="header-anchor" href="#nettoyage-du-plateau-dimpression">Nettoyage du plateau d’impression</a></h2>
+<p>Pour assurer une bonne adhérence des impressions, il est essentiel de maintenir le plateau propre.</p>
+<p>En fonction du type de plateau présent dans l’imprimante (PEI smooth, PEI texturé), les méthodes de nettoyage et les produits à utiliser varient.</p>
+<p>Voici les plateaux disponibles dans le fablab :</p>
+<table>
+<thead>
+<tr>
+<th><strong>Nom du plateau</strong></th>
+<th><strong>Image</strong></th>
+<th><strong>Méthode de nettoyage superficielle</strong></th>
+<th><strong>Méthode de nettoyage approfondie</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Smooth PEI Plate</td>
+<td><img src="/img/Plateau-PEI-Smooth.jpg" alt="Plateau PEI Smooth"></td>
+<td>Retirer les résidus de filament ou poussières avec un chiffon non pelucheux imbibé d’alcool isopropylique.</td>
+<td>Comme le plateau est plat, aucun nettoyage approfondi du plateau n’est nécessaire</td>
+</tr>
+<tr>
+<td>Textured PEI Plate</td>
+<td><img src="/img/Plateau-PEI-Textured.jpg" alt="Plateau PEI Texturé"></td>
+<td>Retirer les résidus de filament ou poussières avec un chiffon non pelucheux imbibé d’alcool isopropylique.</td>
+<td>Nettoyer avec un peu de savon et une brosse à poils doux.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Si des rayures profondes ou des dommages sont présents sur le plateau, il ne faut plus l’utiliser et le remplacer par un nouveau plateau.</p>
+<p>Après nettoyage, éviter de toucher la surface d’impression avec les doigts pour ne pas y déposer de graisse ou saleté.</p>
+<h2 id="nettoyage-de-la-chambre-dimpression" tabindex="-1"><a class="header-anchor" href="#nettoyage-de-la-chambre-dimpression">Nettoyage De la chambre d’impression</a></h2>
+<p>La chambre d’impression doit être maintenue propre pour éviter que des débris n’interfèrent avec le mouvement des axes ou n’affectent la qualité d’impression.</p>
+<p><img src="/img/bac-imprimante.jpg" alt="Chambre d'impression propre"></p>
+<p>Pour nettoyer la chambre d’impression, suivez ces étapes :</p>
+<ol>
+<li><strong>Retirer les débris</strong> : Utilisez un aspirateur ou un chiffon non pelucheux pour enlever les résidus de filament ou la poussière.</li>
+<li><strong>Vérifier les composants</strong> : Assurez-vous que la partie basse des axes ne sont pas couverts de poussière ou de débris qui pourraient empêcher leur mouvement.</li>
+</ol>
+<h2 id="nettoyage-de-la-tête-dimpression-et-de-la-buse" tabindex="-1"><a class="header-anchor" href="#nettoyage-de-la-tête-dimpression-et-de-la-buse">Nettoyage de la tête d’impression et de la buse</a></h2>
+<p>La tête d’impression et la buse sont des composants critiques pour une impression de qualité. Il est important de les nettoyer régulièrement pour éviter les problèmes d’extrusion ou autres défauts d’impression.</p>
+<p><img src="/img/nozzle-sale.jpg" alt="Tête d'impression Sale"><br>
+(Buse sale avec accumulation de filament fondu)</p>
+<p>Pour nettoyer les ecces de filament fondu sur la buse :</p>
+<ol>
+<li><strong>Chauffer la buse</strong> : Allumez l’imprimante et chauffez la buse a une température moyenne (environ 150 a 170°C) pour ramollir le filament.</li>
+<li><strong>Utiliser une brosse métallique douce</strong> : Avec précaution, utilisez une brosse métallique douce pour enlever les résidus de filament fondu sur la buse, il est recommandé d’utiliser une brosse en laiton pour éviter d’endommager la buse.</li>
+<li><strong>Nettoyage à froid</strong> : Si des résidus persistent, laissez la bu<br>
+se refroidir, puis utilisez un cure-dent pour gratter délicatement les dépôts restants.</li>
+</ol>
+<p>Une buse propre devrais ressembler à ceci :<br>
+<img src="/img/nozzle.jpg" alt="Buse propre"></p>
+<p>Pour nettoyer une buse bouchée :</p>
+<ol>
+<li><strong>Chauffer la buse</strong> : Allumez l’imprimante et chauffez la buse à la température recommandée pour le filament utilisé (200-220°C pour le PLA).</li>
+<li><strong>Utiliser une aiguille de nettoyage</strong> : Insérez une aiguille de nettoyage appropriée dans la buse pour déboucher l’obstruction.</li>
+</ol>
+<p>(aiguille de nettoyage de buse)<br>
+<img src="/img/aiguille-nettoyage.jpg" alt="Aiguille de nettoyage de buse"></p>
+<ol start="3">
+<li><strong>Purge du filament</strong> : Après avoir débouché la buse, extrudez un peu de filament via l’interface de l’imprimante pour s’assurer que le flux est rétabli.</li>
+</ol>
+<p>si le problème persiste, il peut être nécessaire de démonter la buse pour un nettoyage plus approfondi (cold pull, trempage dans un solvant, etc.). cf <a href="https://wiki.bambulab.com/en/p1/maintenance/p1p-maintenance#nozzle">Wiki de Bambulab</a></p>
+<h2 id="nettoyage-des-axes-et-lubrification" tabindex="-1"><a class="header-anchor" href="#nettoyage-des-axes-et-lubrification">Nettoyage des axes et lubrification</a></h2>
+<p>Pour assurer un mouvement fluide des axes de l’imprimante, il est important de nettoyer et lubrifier régulièrement les tiges et axes linéaires.</p>
+<p>la P1S comporte plusieurs axes et tiges linéaires nécessitant un entretien régulier :</p>
+<ul>
+<li>Axe X : mouvement gauche-droite de la tête d’impression fait en carbone et par conséquent auto-lubrifiant.<br>
+<img src="/img/carbon_rod.jpg" alt="Axe X en carbone"></li>
+<li>Axe Y-Z Tige linéaire : supporte le mouvement avant-arrière de la tête d’impression et haut-bas du plateau.<br>
+<img src="/img/linear_rods.jpg" alt="Axe Y-Z tige linéaire"></li>
+<li>Vis Z : responsable du mouvement haut-bas du plateau.<br>
+<img src="/img/thread_rod.jpg" alt="Vis Z"></li>
+</ul>
+<h3 id="nettoyage-de-laxe-x-en-carbone" tabindex="-1"><a class="header-anchor" href="#nettoyage-de-laxe-x-en-carbone">Nettoyage de l’axe X en carbone</a></h3>
+<p>Pour nettoyer l’axe X en carbone :</p>
+<ol>
+<li>Utilisez un chiffon doux et sec pour essuyer la surface de l’axe en carbone, en enlevant toute poussière ou débris.</li>
+</ol>
+<div class="markdown-alert markdown-alert-important">
+                    <p class="markdown-alert-title">❗ Important</p>
+<p>N’appliquez pas de lubrifiant sur l’axe en carbone, car il est auto-lubrifiant et l’ajout de lubrifiant pourrait attirer la poussière et nuire a son déplacement.</p>
+</div>
+<h3 id="nettoyage-et-lubrification-des-tiges-linéaires-y-z" tabindex="-1"><a class="header-anchor" href="#nettoyage-et-lubrification-des-tiges-linéaires-y-z">Nettoyage et lubrification des tiges linéaires Y-Z</a></h3>
+<div class="markdown-alert markdown-alert-important">
+                    <p class="markdown-alert-title">❗ Important</p>
+<p>Le nettoyage et la lubrification des axes ne devrais être effectués que lorsque l’imprimante produit des bruits inhabituels ou si des problèmes de mouvement sont détectés.</p>
+</div>
+<p>Pour nettoyer et lubrifier les tiges linéaires Y-Z :</p>
+<ol>
+<li>Utilisez un chiffon doux et sec pour essuyer la surface des tiges linéaires, en enlevant toute poussière ou débris.</li>
+<li>Appliquez une petite quantité de graisse de lubrification fournie par Bambu Lab sur les coins des tiges linéaires.</li>
+<li>Faites fonctionner l’imprimante pour répartir la graisse uniformément sur les tiges (effectuer un auto home ou un déplacement manuel via l’interface).</li>
+</ol>
+<h3 id="nettoyage-et-lubrification-des-vis-z" tabindex="-1"><a class="header-anchor" href="#nettoyage-et-lubrification-des-vis-z">Nettoyage et lubrification des vis Z</a></h3>
+<p>Pour nettoyer et lubrifier les vis Z :</p>
+<ol>
+<li>Utilisez un chiffon doux et sec pour essuyer la surface des vis Z, en enlevant toute poussière ou débris présents.</li>
+<li>Appliquez une fine couche de graisse fournie par Bambu Lab sur toute la longueur des vis Z.</li>
+<li>Faites fonctionner l’imprimante pour répartir la graisse uniformément sur les vis (effectuer un auto home ou un déplacement manuel via l’interface).</li>
+<li>Réappliquez de la graisse une deuxième fois pour assurer une bonne lubrification.</li>
+<li>Essuyez l’excès de graisse au pied de l’axe et au droit du roulement avec un chiffon propre pour éviter l’accumulation de poussière.</li>
+</ol>
+<p>(graisse de lubrification Bambu Lab)<br>
+<img src="/img/lubricant.jpg" alt="Graisse de lubrification Bambu Lab"></p>
+<h2 id="lubrification-des-galets-tendeur-de-courroie" tabindex="-1"><a class="header-anchor" href="#lubrification-des-galets-tendeur-de-courroie">Lubrification des galets tendeur de courroie</a></h2>
+<p>Les galets tendeur de courroie permettent de maintenir la tension correcte des courroies, l’imprimante en comporte 2 au deux extémités arrière de l’axe X.</p>
+<p><img src="/img/idler-pulley.jpg" alt="Galets tendeur de courroie"></p>
+<p>Le roullement à l’intérieur du galet est scellé et ne nécessite pas de lubrification. Cependant, si un bruit de frottement ou de grincement est entendu, il est possible d’appliquer une petite quantité de lubrifiant sur le haut et le bas du galet pour améliorer son fonctionnement.</p>
+<div class="markdown-alert markdown-alert-important">
+                    <p class="markdown-alert-title">❗ Important</p>
+<p>N’appliquez pas de lubrifiant sur la courroie elle-même, car cela pourrait entraîner un glissement et affecter la précision de l’imprimante</p>
+</div>
+<p>Pour lubrifier les galets tendeur de courroie :</p>
+<ol>
+<li>Appliquez une petite quantité de graisse de lubrification fournie par Bambu Lab sur le haut et le bas du galet tendeur a l’aide d’un cure-dent ou d’un petit pinceau.<br>
+<img src="/img/idler-grease.png" alt="Application de graisse sur le galet tendeur"></li>
+<li>Faites bouger la tête d’impression manuellement ou via l’interface pour faire tourner le galet et répartir la graisse uniformément.</li>
+<li>Répétez l’opération sur l’autre galet tendeur de courroie.</li>
+</ol>
+<hr>
+<p>Pour plus d’informations, questions ou information non traitées dans ce document, consultez le <a href="https://wiki.bambulab.com/en/p1/manual">Wiki de bambulab</a> ou la page de maintenance spécifique <a href="https://wiki.bambulab.com/en/p1/maintenance">ici</a>.</p>
+
+    </div>
+    
+    <footer class="doc-footer">
+        <p class="doc-meta">
+            Last updated: <time datetime="2026-05-20T16:55:59.453Z">May 20, 2026</time>
+        </p>
+    </footer>
+</article>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
